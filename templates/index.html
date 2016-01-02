@@ -1,0 +1,56 @@
+<!doctype html>
+<title>Volatility Indices from CBOE</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+<div class=page>
+  <h1>Market Volatility</h1>
+  <div class=metanav>
+
+<table border="0" cellpadding="10">
+<tr>
+<td width="50%" valign="top" align="left">
+
+<p>Market volatility is calculated by the Chicago Board Options Exchange (CBOE) and is expressed as the portion of the annualized stock movement expected (with 68% probability) to occur over the next 30 days.</p>
+
+<p>For example, a VIX volatility value of 15 represents a maximum 15% expected annualized change with 68% probability. Thus the indicated stock or index is expected to change +/- 15%/sqrt(12) = 4.33% over the next 30 days. <i>Reference: <a href="https://en.wikipedia.org/wiki/VIX">Wikipedia</a></i>.</p>
+
+<p>This data is supplied free of charge by <a href="https://www.quandl.com/data/CBOE">quandl</a>.</p>
+
+<hr>
+
+<h4>
+<form id='selectvix' method='post' action='index' > <!-- action must match your next URL -->
+   <p>
+   Input index ticker to examine price movement: <br />
+   <input type='text' name='inputticker' />
+   </p>
+
+   <p>
+   <input type='submit' value='Submit' /> 
+   </p>
+</form>
+</h4>
+<!-- 
+
+{% for message in get_flashed_messages() %}
+  <p class="tickererror">{{ message }}</p>
+{% endfor %}
+ -->
+<p class="tickererror">
+{{errormsg}}
+</p>
+
+
+</td>
+
+<td width="50%" valign="top" align="left">
+<b>&nbsp;&nbsp;Volatility Index and Ticker</b><br>
+
+{{codetable | safe}}
+
+
+</td>
+</tr>
+</table>
+
+</div>
+</div>
