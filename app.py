@@ -1,72 +1,79 @@
-from flask import Flask, render_template, request, redirect, flash
-import requests
+from flask import Flask, render_template, request, redirect
+import numpy as np
 import pandas as pd
-from bokeh.plotting import figure, output_file, save, show
+from bokeh.plotting import figure, output_file, save, show, ColumnDataSource
+from bokeh.models import HoverTool
 from bokeh.resources import CDN
 from bokeh.embed import components
-import os, re
+from datetime import date
 
 
 app = Flask(__name__)
 
-# Format for JSON call:
-# https://www.quandl.com/api/v3/datasets/CBOE/VIX.json?auth_token=M1JzmCxzCx-pQ5vUtUFL
-
-authkey = 'M1JzmCxzCx-pQ5vUtUFL'
-baseurl = 'https://www.quandl.com/api/v3/datasets/CBOE/'
-suffixurl = '.json?auth_token='+authkey
-
-codes = pd.read_csv('vix-codes.csv')
 
 @app.route('/')
 def main():
 	return redirect('/index')
 
 
-@app.route('/index', methods=['GET','POST'])
-def index():
-	if request.method == 'POST':
-		idx = str.upper(request.form['inputticker'])
-		p = re.compile('\W')
-		idx = p.sub('',idx)
-		if idx not in codes.Ticker.values:
-			msg = "Ticker '{}' not found in 'Volatility Index and Ticker' table".format(idx)
-			return render_template('index.html', errormsg=msg, codetable=codes.to_html(index=False, justify='left'))
-		else:
-			return redirect('/results', code=307)
-	return render_template('index.html', codetable=codes.to_html(index=False, justify='left'))
+@app.route('/index', methods=['GET'])
+def index():  #remember the function name does not need to match the URL
+
+	# Load plot data
+	dfall = pd.read_csv('GeneDiseaseUnique.csv')
+	dfall.fillna(value='Not Available', inplace=True)
+	yy = dfall['Number of genes']
+	xx = dfall['score']
+
+	# Generate colors for graphs
+	colorseq = ['#1f77b4', '#aec7e8', '#ff7f0e', '#ffbb78', '#2ca02c',
+				'#98df8a', '#d62728', '#ff9896', '#9467bd', '#c5b0d5',
+				'#8c564b', '#c49c94', '#e377c2', '#f7b6d2', '#7f7f7f',
+				'#c7c7c7', '#bcbd22', '#dbdb8d', '#17becf', '#9edae5']
+	uniqcat = dfall['category'].unique()
+	catclr = dict(zip(uniqcat.tolist(),colorseq[:len(uniqcat)]))
+	catclr['Not Available'] = '#eeeeee'
+
+	# Scatter points for better readability
+	np.random.seed(1)
+	rndm = (np.random.random(yy.shape) - 0.5) * 0.8
 
 
-@app.route('/results', methods=['GET','POST'])
-def results():  #remember the function name does not need to match the URL
-	idx = str.upper(request.form['inputticker'])
-	p = re.compile('\W')
-	idx = p.sub('',idx)
-	
-	call = baseurl+idx+suffixurl
-	rj = requests.get(call).json()
-	rj = rj['dataset']
-	data = pd.DataFrame(rj['data'], columns=rj['column_names'])	
+	# Generate plot
+	output_file("templates/index.html")
 
-	x = pd.to_datetime(data.iloc[:,0])
-	y = data.iloc[:,-1]
+	dfall['color'] = dfall['category'].map(lambda x: catclr[x])
 
-	toollist = "pan,box_zoom,reset,save,resize"
+	source = ColumnDataSource(
+			data=dict(
+				x=xx,
+				y=yy+rndm,
+				genes=yy,
+				desc=dfall['diseaseName'],
+				cat=dfall['category']
+			)
+		)
 
-	output_file("templates/output.html", title='Volatility Index Graph')
-	p = figure(x_axis_label=data.columns[0], y_axis_label=data.columns[-1], \
-	x_axis_type="datetime", tools=toollist, plot_width=800, plot_height=500)
-	p.line(x, y, line_width=1, line_color="CornflowerBlue")
-	p.title = codes.Name.values[codes.Ticker.values==idx][0]
+	hover = HoverTool(tooltips=[("Disease", "@desc"), ("Score", "$x"), ("Genes", "@genes"),("Category", "@cat")])
+
+
+	p = figure(plot_width=900, plot_height=600, tools=['pan','box_zoom','reset', 'save','resize',hover], title="Strength of Gene-Disease Association")
+	p.title_text_font = 'helvetica neue'
+	p.xaxis.axis_label = 'Score'
+	p.yaxis.axis_label = 'Number of Genes'
+	p.xaxis.axis_label_text_font = 'helvetica neue'
+	p.yaxis.axis_label_text_font = 'helvetica neue'
+
+
+	p.circle('x', 'y', size=20, fill_alpha=0.8, color=dfall['color'], source=source, line_width=2)
 	p.responsive = True
 
 	script, div = components(p)
+	updated=date.today().strftime('%Y-%b-%d')
 
-	return render_template('output.html', script=script, div=div)
+	return render_template('index.html', script=script, div=div, updated=updated)
 
 
 if __name__ == "__main__":
-# 	port = int(os.environ.get("PORT", 5000))
-# 	app.run(host='0.0.0.0', port=port, debug=True)
 	app.run(port=33507)
 

@@ -1,56 +1,54 @@
 <!doctype html>
-<title>Volatility Indices from CBOE</title>
-<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
-<div class=page>
-  <h1>Market Volatility</h1>
-  <div class=metanav>
+<html>
+  <head>
+    <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.css" type="text/css" />
+    <link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+    <script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.js"></script>
+    {{ script | safe }}
+  </head>
 
-<table border="0" cellpadding="10">
-<tr>
-<td width="50%" valign="top" align="left">
+  <body>
+    <div class=page>
+      <h1 id="grad1">Genetic Variation and Human Health</h1>
+      <h2 id="grad1">A data-centric approach to drug development</h2>
+      <br>
+	<div class="page-primary">
+      <h2 class="subheading">Introduction</h2>
+      <p>Using publicly-available data that identifies the genetic source of many medical conditions will allow pharmaceutical companies to more efficiently focus their R&D efforts in several important ways:</p>
 
-<p>Market volatility is calculated by the Chicago Board Options Exchange (CBOE) and is expressed as the portion of the annualized stock movement expected (with 68% probability) to occur over the next 30 days.</p>
+      <ol>
+      <li>More accurate determination of the appropriate cellular pathway to target will improve the design and development of small molecule or biologic therapies that can counteract the effects of a disease.</li>
+      <li>Provides researchers with human-validated targets and eliminates the need for traditional cell culture and animal model experiments, whose results aren't guaranteed to translate to humans.</li>
+      <li>Laboratory-based drug discovery is very costly, time-consuming, and suffers from a low success rate.</li>
+      <li>Gene-editing technologies such as CRISPR-Cas9 currently show strong promise as an entirely new treatment approach. If a disease-causing gene can be identified, it may be possible to develop a gene therapy to treat the genetic source directly.</li>
+      </ol>
 
-<p>For example, a VIX volatility value of 15 represents a maximum 15% expected annualized change with 68% probability. Thus the indicated stock or index is expected to change +/- 15%/sqrt(12) = 4.33% over the next 30 days. <i>Reference: <a href="https://en.wikipedia.org/wiki/VIX">Wikipedia</a></i>.</p>
+      <h2 class="subheading">Data collection</h2>
+      <p>Data is contributed primarily by academic researchers who share their results through a variety of public databases.</p>
 
-<p>This data is supplied free of charge by <a href="https://www.quandl.com/data/CBOE">quandl</a>.</p>
+      <ul>
+      <li>A list of around 10,000 established genetic conditions is available from the <a href="http://ghr.nlm.nih.gov/">NIH Genetics Home Reference</a>.</li>
+      <li>A list of gene-disease associations from peer-reviewed journals and several public databases is available at <a href="http://www.disgenet.org/">DisGeNet</a>. This database is current as of August 2015. This resource compiles information from:</li>
+        <ul>
+        <li>Curated databases: <a href="http://www.uniprot.org/">UniProt</a>, <a href="http://ctdbase.org/">Comparative Toxicogenomics Database</a>, <a href="http://www.ncbi.nlm.nih.gov/clinvar/">ClinVar</a>.</li>
+        <li>Predicted databases: <a href="http://ctdbase.org/">Comparative Toxicogenomics Database</a>, <a href="http://www.informatics.jax.org/">Mouse Genome Database</a>, <a href="http://rgd.mcw.edu/">Rat Genome Database</a>.</li>
+        <li>Literature resources: <a href="http://geneticassociationdb.nih.gov/">Genetic Association Database</a>, <a href="http://www.dbs.ifi.lmu.de/~bundschu/LHGDN.html">Literature-derived Human Gene-Disease Network </a>, <a href="http://ibi.imim.es/befree/">BeFree</a>.</li>
+        </ul>
+      </ul>
 
-<hr>
+      <h2 class="subheading">Data analysis</h2>
+      <p>The strength of association between a particular gene and medical condition is directly related to the promise of generating a successful therapy. Large and small pharmaceutical companies who have the expertise to rapidly generate drug candidates can optimize the direction of their R&D efforts.</p>
+      <p>The metric constructed here is based on work done for the DisGeNet database. The weighted score described below represents a metric [0,1] that describes the quality of the established link between the identified gene and associated diseases. Each gene may influence several diseases and each diseases may be influenced by several genes.</p>
+      <ul><b><i>Score = ( WUniProt + WCTDhuman + WClinVar ) + ( WRat + WMouse ) + ( WGAD + WLHGDN + WBeFree )</b></i></ul>
+      <p>where each variable is either <i>0 or some positive value</i> based on whether that gene-disease association appears in the corresponding database. The first term in parentheses represents curated databases, the second term is predicted databases and the third term takes into account the number of publications where the link appears. The <a href="http://www.disgenet.org/web/DisGeNET/menu/dbinfo">DisGeNet About Page</a> has more detailed information.</p>
 
-<h4>
-<form id='selectvix' method='post' action='index' > <!-- action must match your next URL -->
-   <p>
-   Input index ticker to examine price movement: <br />
-   <input type='text' name='inputticker' />
-   </p>
-
-   <p>
-   <input type='submit' value='Submit' /> 
-   </p>
-</form>
-</h4>
-<!-- 
-
-{% for message in get_flashed_messages() %}
-  <p class="tickererror">{{ message }}</p>
-{% endfor %}
- -->
-<p class="tickererror">
-{{errormsg}}
-</p>
-
-
-</td>
-
-<td width="50%" valign="top" align="left">
-<b>&nbsp;&nbsp;Volatility Index and Ticker</b><br>
-
-{{codetable | safe}}
-
-
-</td>
-</tr>
-</table>
-
-</div>
-</div>
+      <h2 class="subheading">Data visualization</h2>
+      <p></p>
+        <div class="graph">
+        {{ div | safe }}
+        </div>
+        </div>
+        <h3 class="footer" id="grad1">Last Updated: {{ updated }}</h3>
+    </div>
+  </body>
+</html>
