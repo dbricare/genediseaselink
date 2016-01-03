@@ -37,18 +37,21 @@
       </ul>
 
       <h2 class="subheading">Data analysis</h2>
-      <p>The strength of association between a particular gene and medical condition is directly related to the promise of generating a successful therapy. Large and small pharmaceutical companies who have the expertise to rapidly generate drug candidates can optimize the direction of their R&D efforts.</p>
       <p>The metric constructed here is based on work done for the DisGeNet database. The weighted score described below represents a metric [0,1] that describes the quality of the established link between the identified gene and associated diseases. Each gene may influence several diseases and each diseases may be influenced by several genes.</p>
       <ul><b><i>Score = ( WUniProt + WCTDhuman + WClinVar ) + ( WRat + WMouse ) + ( WGAD + WLHGDN + WBeFree )</b></i></ul>
       <p>where each variable is either <i>0 or some positive value</i> based on whether that gene-disease association appears in the corresponding database. The first term in parentheses represents curated databases, the second term is predicted databases and the third term takes into account the number of publications where the link appears. The <a href="http://www.disgenet.org/web/DisGeNET/menu/dbinfo">DisGeNet About Page</a> has more detailed information.</p>
 
       <h2 class="subheading">Data visualization</h2>
-      <p></p>
+      <p>The strength of association between a particular gene and medical condition is directly related to the promise of generating a successful therapy. Large and small pharmaceutical companies who have the expertise to rapidly generate drug candidates can optimize the direction of their R&D efforts.</p><br>
+      <p><b>The highest priority disease candidates would have a high score and low number of genes, i.e., <i>the bottom right side of the chart below</i></b>.</p><br>
+      
         <div class="graph">
         {{ div | safe }}
+        
         </div>
         </div>
         <h3 class="footer" id="grad1">Last Updated: {{ updated }}</h3>
+        
     </div>
   </body>
 </html>
