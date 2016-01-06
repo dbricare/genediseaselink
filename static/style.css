@@ -1,22 +1,24 @@
 body            { font-family: helvetica neue, sans-serif; background: White; 
-				  margin: 15px; }
+				  margin: 0px; }
 a, h1, h2       { color: #1f77b4; }
 h1, h2, h3      { font-family: 'Helvetica Neue', serif; color: #fff; margin: 0; 
                   background-color: #1f77b4; padding: 8px; }
-h1              { border-bottom: 2px solid #ccc; border-top-left-radius: 15px;
-                  border-top-right-radius: 15px; }
+h1              { border-bottom: 2px solid #ccc; /* border-top-left-radius: 15px;
+                  border-top-right-radius: 15px; */ }
 h2              { font-size: 1.2em; }
 h3				{ font-size: 1em; }
 li				{ margin: 12px;}
 
-.page-primary	{ padding: 8px; }
-.subheading		{ color: #444; background: #fff; padding-left: 12px; }
 .page           { margin: 0px; border: 0px solid #fff; padding: 0em; background: white; }
+.page-primary	{ padding: 20px; }
+.subheading		{ color: #444; background: #fff; padding-left: 12px; padding-top: 48px; }
 .graph			{ border: 1px solid #777; padding: 23px; }
-.footer			{ border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;
-				  text-align: center; margin-top: 15px; }
+.footer			{ height: 50px; }
+.footertext		{ /* border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; */
+				  text-align: center; vertical-align: center; line-height: 50px; }
 				  
 #grad1 {
+	height: 50px; text-indent: 10px;
     background: #1f77b4; /* For browsers that do not support gradients */    
     background: -webkit-linear-gradient(left, #1f77b4 , #f9f9f9); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(right, #1f77b4 , #f9f9f9); /* For Opera 11.1 to 12.0 */
