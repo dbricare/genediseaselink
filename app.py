@@ -20,7 +20,7 @@ def main():
 def index():  #remember the function name does not need to match the URL
 
 	# Load plot data
-	dfall = pd.read_csv('GeneDiseaseUnique.csv')
+	dfall = pd.read_csv('GeneDiseaseMoreCats.csv')
 	dfall.fillna(value='Not Available', inplace=True)
 	yy = dfall['Number of genes']
 	xx = dfall['score']

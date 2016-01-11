@@ -12,7 +12,9 @@ li				{ margin: 12px;}
 .page           { margin: 0px; border: 0px solid #fff; padding: 0em; background: white; }
 .page-primary	{ padding: 20px; }
 .subheading		{ color: #444; background: #fff; padding-left: 12px; padding-top: 48px; }
-.graph			{ border: 1px solid #777; padding: 23px; }
+.bokeh			{ border: 1px solid #777; padding: 23px; text-align: left; }
+.mpl			{ border: 1px solid #777; padding: 23px; text-align: center; width: 840px;
+				margin: 0 auto; }
 .footer			{ height: 50px; }
 .footertext		{ /* border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; */
 				  text-align: center; vertical-align: center; line-height: 50px; }
