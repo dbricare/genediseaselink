@@ -9,21 +9,30 @@
 
   <body>
     <div class="page">
-      <h1 id="grad1">Genetics of Medical Conditions</h1>
-      <h2 id="grad1">A data-centric approach to drug development</h2>
+      <div class="header">
+      <h1 id="grad1" class="headertxt">Genetics of Human Disease</h1>
+      <h2 id="grad1" class="headertxt">A new data-centric approach to drug development</h2>
+      </div>
 	<div class="page-primary">
 	  <!-- <div height="100">&nbsp;</div> -->
-      <h2 class="subheading">Introduction</h2>
-      <p>Using publicly-available data that identify the genetic source of many medical conditions will allow pharmaceutical companies to more efficiently focus their R&D efforts in several important ways:</p>
+      <h2 class="subheading">Advantages</h2>
+      <p>Accurately identifying the genetic source of a medical condition enables pharmaceutical researchers to more efficiently develop new therapies:</p>
 
       <ol>
       <li>More accurate determination of the appropriate cellular pathway to target will improve the design and development of small molecule or biologic therapies that can counteract the effects of a disease.</li>
       <li>Provides researchers with human-validated targets and eliminates the need for traditional cell culture and animal model experiments, whose results aren't guaranteed to translate to humans.</li>
       <li>Laboratory-based drug discovery is very costly, time-consuming, and suffers from a low success rate.</li>
       <li>Gene-editing technologies such as CRISPR-Cas9 currently show strong promise as an entirely new treatment approach. If a disease-causing gene can be identified, it may be possible to develop a gene therapy to treat the genetic source directly.</li>
-      </ol>
-
-      <h2 class="subheading">Data collection</h2>
+      </ol><br>
+      
+		<p align="center"><b>Measured therapeutic relevance of gene-disease associations</b></p>
+        <div class="bokeh">
+        {{ div | safe }}
+        </div>
+        
+		<p><b>The highest priority disease candidates would have a high score and low number of genes, i.e., <i>the bottom right side of the chart below</i></b>.</p>
+        
+	  <h2 class="subheading">Data collection</h2>
       <p>Data is contributed primarily by academic researchers who share their results through a variety of public databases.</p>
 
       <ul>
@@ -39,19 +48,16 @@
       <h2 class="subheading">Data analysis</h2>
       <p>The metric constructed here is based on work done for the DisGeNet database. The weighted score described below represents a metric [0,1] that describes the quality of the established link between the identified gene and associated diseases. Each gene may influence several diseases and each diseases may be influenced by several genes.</p>
       <ul><b><i>Score = ( WUniProt + WCTDhuman + WClinVar ) + ( WRat + WMouse ) + ( WGAD + WLHGDN + WBeFree )</b></i></ul>
-      <p>where each variable is either <i>0 or some positive value</i> based on whether that gene-disease association appears in the corresponding database. The first term in parentheses represents curated databases, the second term is predicted databases and the third term takes into account the number of publications where the link appears. The <a href="http://www.disgenet.org/web/DisGeNET/menu/dbinfo">DisGeNet About Page</a> has more detailed information.</p>
+  	  <ul><b><i>Number of genes per disease</b> (fewer gene targets indicate more well-defined and easier to treat disease pathology)</i></ul>
+      <p>For the <b>score</b> calculation, each variable is either <i>0 or some positive value</i> based on whether that gene-disease association appears in the corresponding database. The first term in parentheses represents curated databases, the second term is predicted databases and the third term takes into account the number of publications where the link appears. The <a href="http://www.disgenet.org/web/DisGeNET/menu/dbinfo">DisGeNet About Page</a> has more detailed information.</p>
 
-      <h2 class="subheading">Data visualization</h2>
-      <p>The strength of association between a particular gene and medical condition is directly related to the promise of generating a successful therapy. Large and small pharmaceutical companies who have the expertise to rapidly generate drug candidates can optimize the direction of their R&D efforts.</p><br>
-      <p><b>The highest priority disease candidates would have a high score and low number of genes, i.e., <i>the bottom right side of the chart below</i></b>.</p><br>
+      <!--<h2 class="subheading">Data visualization</h2>
+      <p>The strength of association between a particular gene and medical condition is directly related to the promise of generating a successful therapy. Large and small pharmaceutical companies who have the expertise to rapidly generate drug candidates can optimize the direction of their R&D efforts.</p><br>-->
+
       
-        <div class="bokeh">
-        {{ div | safe }}
-        
-        </div>
-        <p>&nbsp;</p>
+		<br><p align="center"><b>Breakdown by disease areas</b></p>
         <div class="mpl">
-        <img src="static/catdist.png" width="840">
+        <img src="static/catdist.png">
         </div>
         <p>&nbsp;</p>
         </div>
