@@ -30,8 +30,12 @@ def index():  #remember the function name does not need to match the URL
 				'#98df8a', '#d62728', '#ff9896', '#9467bd', '#c5b0d5',
 				'#8c564b', '#c49c94', '#e377c2', '#f7b6d2', '#7f7f7f',
 				'#c7c7c7', '#bcbd22', '#dbdb8d', '#17becf', '#9edae5']
+	colordark = colorseq[0::2]
+	colorlight = colorseq[1::2]
+	clrdrklt = colordark.copy()
+	clrdrklt.extend(colorlight)
 	uniqcat = dfall['category'].unique()
-	catclr = dict(zip(uniqcat.tolist(),colorseq[:len(uniqcat)]))
+	catclr = dict(zip(uniqcat.tolist(),clrdrklt[:len(uniqcat)]))
 	catclr['Not Available'] = '#eeeeee'
 
 	# Scatter points for better readability
@@ -65,7 +69,7 @@ def index():  #remember the function name does not need to match the URL
 	p.yaxis.axis_label_text_font = 'helvetica neue'
 
 
-	p.circle('x', 'y', size=20, fill_alpha=0.8, color=dfall['color'], source=source, line_width=2)
+	p.circle('x', 'y', size=20, fill_alpha=0.8, color=dfall['color'], source=source, line_width=1, line_color='#000000')
 	p.responsive = True
 
 	script, div = components(p)

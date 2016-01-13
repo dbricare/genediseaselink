@@ -2,21 +2,22 @@
 <html>
   <head>
     <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.css" type="text/css" />
-    <link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+    <link rel=stylesheet type="text/css" href='{{ url_for('static',filename='style.css')}}'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.js"></script>
     {{ script | safe }}
   </head>
 
   <body>
     <div class="page">
-      <div class="header">
-      <h1 id="grad1" class="headertxt">Genetics of Human Disease</h1>
-      <h2 id="grad1" class="headertxt">A new data-centric approach to drug development</h2>
+      <div class="header" id="grad1">
+      <h1 id="grad1" class="headertop">Genetics of Human Disease</h1>
+      <h2 id="grad1" class="headerbtm">A new data-centric approach to drug development</h2>
       </div>
 	<div class="page-primary">
 	  <!-- <div height="100">&nbsp;</div> -->
       <h2 class="subheading">Advantages</h2>
-      <p>Accurately identifying the genetic source of a medical condition enables pharmaceutical researchers to more efficiently develop new therapies:</p>
+      <p>Measuring the strength of association between a medical condition and its genetic link will enable pharmaceutical companies to more efficiently develop new therapies.</p>
 
       <ol>
       <li>More accurate determination of the appropriate cellular pathway to target will improve the design and development of small molecule or biologic therapies that can counteract the effects of a disease.</li>
@@ -25,12 +26,16 @@
       <li>Gene-editing technologies such as CRISPR-Cas9 currently show strong promise as an entirely new treatment approach. If a disease-causing gene can be identified, it may be possible to develop a gene therapy to treat the genetic source directly.</li>
       </ol><br>
       
-		<p align="center"><b>Measured therapeutic relevance of gene-disease associations</b></p>
+		<h3 class="caption">Measured therapeutic relevance of gene-disease associations</h3>
+		<p>The highest priority disease candidates are found in the bottom right side of the chart, with a high score and low number of genes.</p>
         <div class="bokeh">
         {{ div | safe }}
         </div>
-        
-		<p><b>The highest priority disease candidates would have a high score and low number of genes, i.e., <i>the bottom right side of the chart below</i></b>.</p>
+        <p>&nbsp;</p>
+        <h3 class="caption">Breakdown by disease area</h3>
+        <div class="mpl">
+        <img src="static/catdist.png">
+        </div>
         
 	  <h2 class="subheading">Data collection</h2>
       <p>Data is contributed primarily by academic researchers who share their results through a variety of public databases.</p>
@@ -54,14 +59,12 @@
       <!--<h2 class="subheading">Data visualization</h2>
       <p>The strength of association between a particular gene and medical condition is directly related to the promise of generating a successful therapy. Large and small pharmaceutical companies who have the expertise to rapidly generate drug candidates can optimize the direction of their R&D efforts.</p><br>-->
 
-      
-		<br><p align="center"><b>Breakdown by disease areas</b></p>
-        <div class="mpl">
-        <img src="static/catdist.png">
-        </div>
+    
         <p>&nbsp;</p>
         </div>
-        <h3 class="footertext" id="grad1">Last Updated: {{ updated }}</h3>
+          <div class="footer" id="grad1">
+          <h3 class="footertext" id="grad1">Last Updated: {{ updated }}</h3>
+          </div>
     </div>
   </body>
 </html>
