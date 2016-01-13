@@ -28,14 +28,14 @@ platelet glycoprotein iv deficiency,3,0.723685559411218,CD36,CD36 molecule (thro
 lipoid congenital adrenal hyperplasia,4,0.723685559411218,STAR,steroidogenic acute regulatory protein,/condition/x-linked-infantile-nystagmus,Eyes and vision
 alpha-mannosidosis,1,0.723685559411218,MAN2B1,"mannosidase, alpha, class 2B, member 1",/condition/alpha-mannosidosis,"Food, nutrition, and metabolism"
 thiopurine s methyltranferase deficiency,1,0.723402054841124,TPMT,thiopurine S-methyltransferase,/condition/thiopurine-s-methyltransferase-deficiency,Blood/lymphatic system
-"muscular dystrophy congenital, merosin negative",3,0.723402054841124,LAMA2,"laminin, alpha 2",/condition/kniest-dysplasia,"Food, nutrition, and metabolism"
+"muscular dystrophy congenital, merosin negative",3,0.723402054841124,LAMA2,"laminin, alpha 2",/condition/kniest-dysplasia,"Bones, muscles, and connective tissues"
 x-linked periventricular heterotopia,3,0.7231185502710301,FLNA,"filamin A, alpha",/condition/ohdo-syndrome-maat-kievit-brunner-type,Heart and circulation
 popliteal pterygium syndrome,2,0.7231185502710301,IRF6,interferon regulatory factor 6,/condition/popliteal-pterygium-syndrome,"Bones, muscles, and connective tissues"
 hyperprolinemia,4,0.7231185502710301,PRODH,proline dehydrogenase (oxidase) 1,/condition/hyperprolinemia,"Food, nutrition, and metabolism"
 convulsions benign familial neonatal dominant form,4,0.7231185502710301,KCNQ3,"potassium channel, voltage gated KQT-like subfamily Q, member 3",/condition/familial-mediterranean-fever,"Bones, muscles, and connective tissues"
 hand foot uterus syndrome,3,0.7231185502710301,HOXA13,homeobox A13,/condition/townes-brocks-syndrome,"Bones, muscles, and connective tissues"
 argininosuccinic aciduria,3,0.722835045700937,ASL,argininosuccinate lyase,/condition/argininosuccinic-aciduria,"Food, nutrition, and metabolism"
-doyne honeycomb retinal dystrophy,2,0.722835045700937,EFEMP1,EGF containing fibulin-like extracellular matrix protein 1,,
+doyne honeycomb retinal dystrophy,2,0.722835045700937,EFEMP1,EGF containing fibulin-like extracellular matrix protein 1,,Eyes and vision
 "craniosynostosis, type 2",1,0.722835045700937,MSX2,msh homeobox 2,/condition/baller-gerold-syndrome,Heart and circulation
 brachydactyly type c,3,0.722551541130843,GDF5,growth differentiation factor 5,/condition/2q37-deletion-syndrome,"Bones, muscles, and connective tissues"
 "hemochromatosis, type 3",3,0.722551541130843,TFR2,transferrin receptor 2,/condition/hereditary-hemochromatosis,"Food, nutrition, and metabolism"
@@ -51,7 +51,7 @@ ehlers-danlos syndrome type 6,2,0.7219845319906558,PLOD1,"procollagen-lysine, 2-
 lig4 syndrome,2,0.7219845319906558,LIG4,"ligase IV, DNA, ATP-dependent",/condition/congenital-contractural-arachnodactyly,"Ear, nose, and throat"
 arterial calcification of infancy,2,0.7219845319906558,ENPP1,ectonucleotide pyrophosphatase/phosphodiesterase 1,/condition/coats-plus-syndrome,Immune system
 mosaic variegated aneuploidy syndrome,4,0.7219845319906558,BUB1B,BUB1 mitotic checkpoint serine/threonine kinase B,,
-osteolysis hereditary multicentric,1,0.7219845319906558,MMP2,"matrix metallopeptidase 2 (gelatinase A, 72kDa gelatinase, 72kDa type IV collagenase)",/condition/spinal-muscular-atrophy-with-respiratory-distress-type-1,Blood/lymphatic system
+osteolysis hereditary multicentric,1,0.7219845319906558,MMP2,"matrix metallopeptidase 2 (gelatinase A, 72kDa gelatinase, 72kDa type IV collagenase)",/condition/spinal-muscular-atrophy-with-respiratory-distress-type-1,"Bones, muscles, and connective tissues"
 succinic semialdehyde dehydrogenase deficiency,3,0.7219845319906558,ALDH5A1,"aldehyde dehydrogenase 5 family, member A1",/condition/succinic-semialdehyde-dehydrogenase-deficiency,Brain and nervous system
 "maturity-onset diabetes of the young, type 1",4,0.7217010274205621,HNF4A,"hepatocyte nuclear factor 4, alpha",/condition/neuroferritinopathy,Brain and nervous system
 dyggve-melchior-clausen syndrome,2,0.7217010274205621,DYM,dymeclin,,
@@ -83,13 +83,13 @@ purine nucleoside phosphorylase deficiency,3,0.721134018280375,PNP,purine nucleo
 ter haar syndrome,1,0.721134018280375,SH3PXD2B,SH3 and PX domains 2B,,
 n-acetyl glutamate synthetase deficiency,1,0.721134018280375,NAGS,N-acetylglutamate synthase,/condition/schindler-disease,"Food, nutrition, and metabolism"
 retinal cone dystrophy 2,1,0.720850513710281,GUCY2D,"guanylate cyclase 2D, membrane (retina-specific)",/condition/retinitis-pigmentosa,Eyes and vision
-limb-girdle muscular dystrophy type 2f,1,0.720850513710281,SGCD,"sarcoglycan, delta (35kDa dystrophin-associated glycoprotein)",/condition/limb-girdle-muscular-dystrophy,Brain and nervous system
+limb-girdle muscular dystrophy type 2f,1,0.720850513710281,SGCD,"sarcoglycan, delta (35kDa dystrophin-associated glycoprotein)",/condition/limb-girdle-muscular-dystrophy,"Bones, muscles, and connective tissues"
 exudative vitreoretinopathy 1,3,0.720850513710281,FZD4,frizzled class receptor 4,/condition/familial-exudative-vitreoretinopathy,Eyes and vision
 "ventricular tachycardia, catecholaminergic polymorphic, 2",2,0.720850513710281,CASQ2,calsequestrin 2 (cardiac muscle),/condition/catecholaminergic-polymorphic-ventricular-tachycardia,Heart and circulation
 mucolipidosis ii alpha beta,1,0.720567009140187,GNPTAB,"N-acetylglucosamine-1-phosphate transferase, alpha and beta subunits",/condition/sialidosis,"Bones, muscles, and connective tissues"
 hyaluronidase deficiency,2,0.720567009140187,HYAL1,hyaluronoglucosaminidase 1,/condition/glut1-deficiency-syndrome,"Food, nutrition, and metabolism"
 fuhrmann syndrome,1,0.720567009140187,WNT7A,"wingless-type MMTV integration site family, member 7A",/condition/romano-ward-syndrome,"Skin, hair, and nails"
-"cataract, zonular pulverulent 1",2,0.720567009140187,GJA8,"gap junction protein, alpha 8, 50kDa",,
+"cataract, zonular pulverulent 1",2,0.720567009140187,GJA8,"gap junction protein, alpha 8, 50kDa",,Eyes and vision
 dent disease 1,2,0.720567009140187,CLCN5,"chloride channel, voltage-sensitive 5",/condition/von-hippel-lindau-syndrome,Brain and nervous system
 metaphyseal chondrodysplasia schmid type,1,0.720567009140187,COL10A1,"collagen, type X, alpha 1",/condition/otospondylomegaepiphyseal-dysplasia,"Bones, muscles, and connective tissues"
 fibular hypoplasia and complex brachydactyly,1,0.720567009140187,GDF5,growth differentiation factor 5,/condition/cartilage-hair-hypoplasia,"Bones, muscles, and connective tissues"
@@ -105,7 +105,7 @@ guanidinoacetate methyltransferase deficiency,2,0.720567009140187,GAMT,guanidino
 peroxisomal acyl-coa oxidase deficiency,1,0.720567009140187,ACOX1,"acyl-CoA oxidase 1, palmitoyl",/condition/peroxisomal-acyl-coa-oxidase-deficiency,Brain and nervous system
 meckel syndrome type 3,3,0.720567009140187,TMEM67,transmembrane protein 67,/condition/donnai-barrow-syndrome,Digestive system
 "platyspondylic lethal skeletal dysplasia, torrance type",1,0.720567009140187,COL2A1,"collagen, type II, alpha 1",/condition/platyspondylic-lethal-skeletal-dysplasia-torrance-type,"Bones, muscles, and connective tissues"
-brain small vessel disease with hemorrhage,4,0.720567009140187,COL4A1,"collagen, type IV, alpha 1",/condition/robinow-syndrome,"Bones, muscles, and connective tissues"
+brain small vessel disease with hemorrhage,4,0.720567009140187,COL4A1,"collagen, type IV, alpha 1",/condition/robinow-syndrome,Brain and nervous system
 oto-palato-digital syndrome type 1,2,0.720567009140187,FLNA,"filamin A, alpha",/condition/otopalatodigital-syndrome-type-2,Brain and nervous system
 "neutrophilia, hereditary",2,0.720567009140187,CSF3R,colony stimulating factor 3 receptor (granulocyte),/condition/hereditary-leiomyomatosis-and-renal-cell-cancer,"Skin, hair, and nails"
 "fanconi anemia, complementation group d2",2,0.720567009140187,FANCD2,"Fanconi anemia, complementation group D2",/condition/triosephosphate-isomerase-deficiency,Kidneys and urinary system
@@ -127,12 +127,12 @@ sarcoma family syndrome of li and fraumeni,2,0.720283504570094,TP53,tumor protei
 "epileptic encephalopathy, early infantile, 2",1,0.720283504570094,CDKL5,cyclin-dependent kinase-like 5,/condition/leigh-syndrome,"Food, nutrition, and metabolism"
 "amaurosis congenita of leber, type 2",1,0.720283504570094,RPE65,retinal pigment epithelium-specific protein 65kDa,/condition/spondyloepimetaphyseal-dysplasia-strudwick-type,Endocrine system (hormones)
 retinitis pigmentosa 11,1,0.720283504570094,PRPF31,pre-mRNA processing factor 31,/condition/retinitis-pigmentosa,Eyes and vision
-retinitis pigmentosa 14,2,0.720283504570094,TULP1,tubby like protein 1,/condition/usher-syndrome,"Ear, nose, and throat"
+retinitis pigmentosa 14,2,0.720283504570094,TULP1,tubby like protein 1,/condition/usher-syndrome,Eyes and vision
 syndactyly cenani lenz type,2,0.720283504570094,LRP4,low density lipoprotein receptor-related protein 4,,
 multiple synostoses syndrome 2,2,0.720283504570094,GDF5,growth differentiation factor 5,,
 "exudative vitreoretinopathy, familial, x-linked recessive",1,0.720283504570094,NDP,Norrie disease (pseudoglioma),/condition/wagner-syndrome,Eyes and vision
 "glycogen storage disease 0, liver",1,0.720283504570094,GYS2,glycogen synthase 2 (liver),/condition/cystinosis,"Bones, muscles, and connective tissues"
-"muscular dystrophy, congenital, lmna-related",1,0.720283504570094,LMNA,lamin A/C,/condition/leukoencephalopathy-with-vanishing-white-matter,Eyes and vision
+"muscular dystrophy, congenital, lmna-related",1,0.720283504570094,LMNA,lamin A/C,/condition/leukoencephalopathy-with-vanishing-white-matter,"Bones, muscles, and connective tissues"
 metachromatic leukodystrophy due to saposin b deficiency,1,0.720283504570094,PSAP,prosaposin,/condition/pol-iii-related-leukodystrophy,Brain and nervous system
 "bartter syndrome, antenatal type 1",1,0.720283504570094,SLC12A1,"solute carrier family 12 (sodium/potassium/chloride transporter), member 1",/condition/oculodentodigital-dysplasia,Digestive system
 "tay-sachs disease, ab variant",3,0.720283504570094,GM2A,GM2 ganglioside activator,/condition/gm2-gangliosidosis-ab-variant,Brain and nervous system
@@ -146,9 +146,9 @@ marles greenberg persaud syndrome,1,0.720283504570094,FREM1,FRAS1 related extrac
 "oculocutaneous albinism, type iv",1,0.720283504570094,SLC45A2,"solute carrier family 45, member 2",/condition/griscelli-syndrome,"Skin, hair, and nails"
 "cardiomyopathy, dilated, 1i",1,0.72,DES,desmin,/condition/dilated-cardiomyopathy-with-ataxia-syndrome,Heart and circulation
 "primary ciliary dyskinesia, 3",1,0.72,DNAH5,"dynein, axonemal, heavy chain 5",/condition/primary-ciliary-dyskinesia,Lungs and breathing
-"neuronopathy, distal hereditary motor, type iib",1,0.72,HSPB1,heat shock 27kDa protein 1,/condition/troyer-syndrome,"Bones, muscles, and connective tissues"
-"cardiomyopathy, familial hypertrophic, 10",1,0.72,MYL2,"myosin, light chain 2, regulatory, cardiac, slow",/condition/multiple-endocrine-neoplasia,Kidneys and urinary system
-"deafness, autosomal dominant 36",1,0.72,TMC1,transmembrane channel-like 1,/condition/doors-syndrome,Mouth and teeth
+"neuronopathy, distal hereditary motor, type iib",1,0.72,HSPB1,heat shock 27kDa protein 1,/condition/troyer-syndrome,Brain and nervous system
+"cardiomyopathy, familial hypertrophic, 10",1,0.72,MYL2,"myosin, light chain 2, regulatory, cardiac, slow",/condition/multiple-endocrine-neoplasia,Heart and circulation
+"deafness, autosomal dominant 36",1,0.72,TMC1,transmembrane channel-like 1,/condition/doors-syndrome,"Ear, nose, and throat"
 "muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type a, 5",1,0.72,FKRP,fukutin related protein,/condition/metachromatic-leukodystrophy,Brain and nervous system
 asphyxiating thoracic dystrophy 2,1,0.72,IFT80,intraflagellar transport 80,/condition/asphyxiating-thoracic-dystrophy,Eyes and vision
 mitochondrial dna depletion syndrome 5 (encephalomyopathic with or without methylmalonic aciduria),1,0.72,SUCLA2,"succinate-CoA ligase, ADP-forming, beta subunit",/condition/deoxyguanosine-kinase-deficiency,Brain and nervous system
@@ -157,14 +157,14 @@ mitochondrial dna depletion syndrome 5 (encephalomyopathic with or without methy
 "neutropenia, severe congenital, autosomal dominant 2",1,0.72,GFI1,growth factor independent 1 transcription repressor,/condition/x-linked-severe-combined-immunodeficiency,Brain and nervous system
 glycine n-methyltransferase deficiency,1,0.72,GNMT,glycine N-methyltransferase,/condition/hypermethioninemia,"Food, nutrition, and metabolism"
 6-pyruvoyl-tetrahydropterin synthase deficiency,1,0.72,PTS,6-pyruvoyltetrahydropterin synthase,,
-"arrhythmogenic right ventricular dysplasia, familial, 12",1,0.72,JUP,junction plakoglobin,/condition/mccune-albright-syndrome,Endocrine system (hormones)
+"arrhythmogenic right ventricular dysplasia, familial, 12",1,0.72,JUP,junction plakoglobin,/condition/mccune-albright-syndrome,Heart and circulation
 "ceroid lipofuscinosis, neuronal, 7",1,0.72,MFSD8,major facilitator superfamily domain containing 8,/condition/late-infantile-neuronal-ceroid-lipofuscinosis,Brain and nervous system
 joubert syndrome 5,1,0.72,CEP290,centrosomal protein 290kDa,/condition/swyer-syndrome,"Bones, muscles, and connective tissues"
 leber congenital amaurosis 14,1,0.72,LRAT,lecithin retinol acyltransferase (phosphatidylcholine--retinol O-acyltransferase),/condition/hereditary-sensory-and-autonomic-neuropathy-type-v,Blood/lymphatic system
 "heterotaxy, visceral, x-linked",2,0.72,ZIC3,Zic family member 3,/condition/pallister-hall-syndrome,Brain and nervous system
 "ceroid lipofuscinosis, neuronal, 1",1,0.72,PPT1,palmitoyl-protein thioesterase 1,/condition/late-infantile-neuronal-ceroid-lipofuscinosis,Brain and nervous system
 "stickler syndrome, type i, nonsyndromic ocular",1,0.72,COL2A1,"collagen, type II, alpha 1",/condition/doors-syndrome,Brain and nervous system
-"osteopetrosis, autosomal recessive 1",2,0.72,TCIRG1,"T-cell, immune regulator 1, ATPase, H+ transporting, lysosomal V0 subunit A3",/condition/22q112-deletion-syndrome,"Skin, hair, and nails"
+"osteopetrosis, autosomal recessive 1",2,0.72,TCIRG1,"T-cell, immune regulator 1, ATPase, H+ transporting, lysosomal V0 subunit A3",/condition/22q112-deletion-syndrome,"Bones, muscles, and connective tissues"
 nemaline myopathy 3,1,0.72,ACTA1,"actin, alpha 1, skeletal muscle",/condition/actin-accumulation-myopathy,"Bones, muscles, and connective tissues"
 "myasthenic syndrome, congenital, type id",4,0.72,CHRNE,"cholinergic receptor, nicotinic, epsilon (muscle)",/condition/familial-cylindromatosis,"Ear, nose, and throat"
 "cardiomyopathy, dilated, 1c",4,0.72,LDB3,LIM domain binding 3,/condition/dilated-cardiomyopathy-with-ataxia-syndrome,Heart and circulation
@@ -172,16 +172,16 @@ bifunctional peroxisomal enzyme deficiency,2,0.72,HSD17B4,hydroxysteroid (17-bet
 "parkinson disease 8, autosomal dominant",1,0.72,LRRK2,leucine-rich repeat kinase 2,/condition/alpers-huttenlocher-syndrome,"Food, nutrition, and metabolism"
 noonan syndrome 4,1,0.72,SOS1,son of sevenless homolog 1 (Drosophila),/condition/andersen-tawil-syndrome,Digestive system
 osler-rendu-weber syndrome 2,1,0.72,ACVRL1,activin A receptor type II-like 1,/condition/hereditary-hemorrhagic-telangiectasia,Blood/lymphatic system
-"cardiomyopathy, dilated, 1d",1,0.72,TNNT2,troponin T type 2 (cardiac),/condition/dilated-cardiomyopathy-with-ataxia-syndrome,Brain and nervous system
-"cardiomyopathy, familial hypertrophic, 12",1,0.72,CSRP3,cysteine and glycine-rich protein 3 (cardiac LIM protein),/condition/hyperphosphatemic-familial-tumoral-calcinosis,Cancers
+"cardiomyopathy, dilated, 1d",1,0.72,TNNT2,troponin T type 2 (cardiac),/condition/dilated-cardiomyopathy-with-ataxia-syndrome,Heart and circulation
+"cardiomyopathy, familial hypertrophic, 12",1,0.72,CSRP3,cysteine and glycine-rich protein 3 (cardiac LIM protein),/condition/hyperphosphatemic-familial-tumoral-calcinosis,Heart and circulation
 "microcephaly, primary autosomal recessive, 5",1,0.72,ASPM,"asp (abnormal spindle) homolog, microcephaly associated (Drosophila)",/condition/primary-carnitine-deficiency,"Food, nutrition, and metabolism"
-"deafness, autosomal dominant 12",1,0.72,TECTA,tectorin alpha,/condition/troyer-syndrome,Brain and nervous system
-"cardiomyopathy, familial hypertrophic, 6",1,0.72,PRKAG2,"protein kinase, AMP-activated, gamma 2 non-catalytic subunit",/condition/noonan-syndrome,Immune system
+"deafness, autosomal dominant 12",1,0.72,TECTA,tectorin alpha,/condition/troyer-syndrome,"Ear, nose, and throat"
+"cardiomyopathy, familial hypertrophic, 6",1,0.72,PRKAG2,"protein kinase, AMP-activated, gamma 2 non-catalytic subunit",/condition/noonan-syndrome,Heart and circulation
 alpha-b crystallinopathy,1,0.72,CRYAB,"crystallin, alpha B",/condition/maple-syrup-urine-disease,Brain and nervous system
-"deafness, autosomal recessive 7",1,0.72,TMC1,transmembrane channel-like 1,/condition/hereditary-angiopathy-with-nephropathy-aneurysms-and-muscle-cramps-syndrome,Kidneys and urinary system
+"deafness, autosomal recessive 7",1,0.72,TMC1,transmembrane channel-like 1,/condition/hereditary-angiopathy-with-nephropathy-aneurysms-and-muscle-cramps-syndrome,"Ear, nose, and throat"
 amyotrophic lateral sclerosis 8,1,0.72,VAPB,VAMP (vesicle-associated membrane protein)-associated protein B and C,/condition/craniofacial-microsomia,Brain and nervous system
 cerebral cavernous malformations 2,1,0.72,CCM2,cerebral cavernous malformation 2,/condition/maffucci-syndrome,Brain and nervous system
-"deafness, autosomal recessive 74",1,0.72,MSRB3,methionine sulfoxide reductase B3,/condition/costeff-syndrome,Mouth and teeth
+"deafness, autosomal recessive 74",1,0.72,MSRB3,methionine sulfoxide reductase B3,/condition/costeff-syndrome,"Ear, nose, and throat"
 "charcot-marie-tooth disease, axonal, type 2a1",1,0.72,KIF1B,kinesin family member 1B,/condition/charcot-marie-tooth-disease,Brain and nervous system
 narcolepsy 1,3,0.72,HCRT,hypocretin (orexin) neuropeptide precursor,/condition/narcolepsy,Brain and nervous system
 orofacial cleft 5,1,0.72,MSX1,msh homeobox 1,/condition/van-der-woude-syndrome,Mouth and teeth
@@ -190,13 +190,13 @@ orofacial cleft 5,1,0.72,MSX1,msh homeobox 1,/condition/van-der-woude-syndrome,M
 "ectrodactyly, ectodermal dysplasia, and cleft lip/palate syndrome 3",1,0.72,TP63,tumor protein p63,/condition/autoimmune-polyglandular-syndrome-type-1,"Bones, muscles, and connective tissues"
 retinitis pigmentosa 13,1,0.72,PRPF8,pre-mRNA processing factor 8,/condition/retinitis-pigmentosa,Eyes and vision
 progressive hearing loss stapes fixation,1,0.72,POU3F4,POU class 3 homeobox 4,/condition/palmoplantar-keratoderma-with-deafness,"Skin, hair, and nails"
-"deafness, autosomal recessive 37",1,0.72,MYO6,myosin VI,/condition/vldlr-associated-cerebellar-hypoplasia,"Bones, muscles, and connective tissues"
+"deafness, autosomal recessive 37",1,0.72,MYO6,myosin VI,/condition/vldlr-associated-cerebellar-hypoplasia,"Ear, nose, and throat"
 joubert syndrome 3,1,0.72,AHI1,Abelson helper integration site 1,/condition/corticosterone-methyloxidase-deficiency,Brain and nervous system
 "tooth agenesis, selective, 3",1,0.72,PAX9,paired box 9,/condition/andermann-syndrome,Brain and nervous system
 "factor xiii, a subunit, deficiency of",1,0.72,F13A1,"coagulation factor XIII, A1 polypeptide",/condition/factor-xiii-deficiency,Blood/lymphatic system
 "nephrotic syndrome, idiopathic, steroid-resistant",3,0.72,NPHS2,"nephrosis 2, idiopathic, steroid-resistant (podocin)",/condition/marinesco-sjogren-syndrome,Eyes and vision
-"cataract, coppock-like",3,0.72,CRYGC,"crystallin, gamma C",,
-"fibrosis of extraocular muscles, congenital, 3a, with or without extraocular involvement",1,0.72,TUBB3,"tubulin, beta 3 class III",/condition/congenital-hepatic-fibrosis,Kidneys and urinary system
+"cataract, coppock-like",3,0.72,CRYGC,"crystallin, gamma C",,Eyes and vision
+"fibrosis of extraocular muscles, congenital, 3a, with or without extraocular involvement",1,0.72,TUBB3,"tubulin, beta 3 class III",/condition/congenital-hepatic-fibrosis,"Bones, muscles, and connective tissues"
 "epiphyseal dysplasia, multiple, 5",1,0.72,MATN3,matrilin 3,/condition/multiple-epiphyseal-dysplasia,"Bones, muscles, and connective tissues"
 noonan syndrome 5,1,0.72,RAF1,"Raf-1 proto-oncogene, serine/threonine kinase",/condition/pitt-hopkins-syndrome,Heart and circulation
 "ceroid lipofuscinosis, neuronal, 2",3,0.72,TPP1,tripeptidyl peptidase I,/condition/kufs-disease,Brain and nervous system
@@ -206,22 +206,22 @@ thyroid dyshormonogenesis 3,1,0.72,TG,thyroglobulin,,
 atrial septal defect 2,1,0.72,GATA4,GATA binding protein 4,/condition/oculofaciocardiodental-syndrome,Mouth and teeth
 cornea plana 2,1,0.72,KERA,keratocan,,
 holoprosencephaly 5,1,0.72,ZIC2,Zic family member 2,/condition/nonsyndromic-holoprosencephaly,Brain and nervous system
-"deafness, autosomal recessive 3",1,0.72,MYO15A,myosin XVA,/condition/cerebral-autosomal-dominant-arteriopathy-with-subcortical-infarcts-and-leukoencephalopathy,"Bones, muscles, and connective tissues"
+"deafness, autosomal recessive 3",1,0.72,MYO15A,myosin XVA,/condition/cerebral-autosomal-dominant-arteriopathy-with-subcortical-infarcts-and-leukoencephalopathy,"Ear, nose, and throat"
 "surfactant metabolism dysfunction, pulmonary, 3",1,0.72,ABCA3,"ATP-binding cassette, sub-family A (ABC1), member 3",/condition/thiopurine-s-methyltransferase-deficiency,"Food, nutrition, and metabolism"
 exudative vitreoretinopathy 5,1,0.72,TSPAN12,tetraspanin 12,/condition/familial-exudative-vitreoretinopathy,Eyes and vision
 meretoja syndrome,1,0.72,GSN,gelsolin,/condition/lattice-corneal-dystrophy-type-ii,Brain and nervous system
-"deafness, autosomal recessive 1a",3,0.72,GJB2,"gap junction protein, beta 2, 26kDa",/condition/22q112-deletion-syndrome,Eyes and vision
+"deafness, autosomal recessive 1a",3,0.72,GJB2,"gap junction protein, beta 2, 26kDa",/condition/22q112-deletion-syndrome,"Ear, nose, and throat"
 "waardenburg syndrome, type 4b",1,0.72,EDN3,endothelin 3,/condition/axenfeld-rieger-syndrome,"Bones, muscles, and connective tissues"
-"hemorrhagic destruction of the brain, subependymal calcification, and cataracts",1,0.72,JAM3,junctional adhesion molecule 3,,
+"hemorrhagic destruction of the brain, subependymal calcification, and cataracts",1,0.72,JAM3,junctional adhesion molecule 3,,Brain and nervous system
 "cerebral amyloid angiopathy, app-related",1,0.72,APP,amyloid beta (A4) precursor protein,/condition/lattice-corneal-dystrophy-type-ii,Eyes and vision
-"muscular dystrophy, limb-girdle, type 2i",1,0.72,FKRP,fukutin related protein,/condition/alpers-huttenlocher-syndrome,Eyes and vision
+"muscular dystrophy, limb-girdle, type 2i",1,0.72,FKRP,fukutin related protein,/condition/alpers-huttenlocher-syndrome,"Bones, muscles, and connective tissues"
 "ciliary dyskinesia, primary, 7",1,0.72,DNAH11,"dynein, axonemal, heavy chain 11",/condition/familial-paroxysmal-nonkinesigenic-dyskinesia,Brain and nervous system
-"cardiomyopathy, familial hypertrophic, 2",1,0.72,TNNT2,troponin T type 2 (cardiac),/condition/microvillus-inclusion-disease,Endocrine system (hormones)
-retinitis pigmentosa 7,1,0.72,PRPH2,"peripherin 2 (retinal degeneration, slow)",/condition/retinitis-pigmentosa,Brain and nervous system
+"cardiomyopathy, familial hypertrophic, 2",1,0.72,TNNT2,troponin T type 2 (cardiac),/condition/microvillus-inclusion-disease,Heart and circulation
+retinitis pigmentosa 7,1,0.72,PRPH2,"peripherin 2 (retinal degeneration, slow)",/condition/retinitis-pigmentosa,Eyes and vision
 "arrhythmogenic right ventricular dysplasia, familial, 2",1,0.72,RYR2,ryanodine receptor 2 (cardiac),/condition/arrhythmogenic-right-ventricular-cardiomyopathy,Heart and circulation
-"deafness, autosomal recessive 2",1,0.72,MYO7A,myosin VIIA,/condition/multiple-epiphyseal-dysplasia,Kidneys and urinary system
+"deafness, autosomal recessive 2",1,0.72,MYO7A,myosin VIIA,/condition/multiple-epiphyseal-dysplasia,"Ear, nose, and throat"
 "epidermolysis bullosa simplex, ogna type",1,0.72,PLEC,plectin,/condition/epidermolysis-bullosa-with-pyloric-atresia,"Skin, hair, and nails"
-retinitis pigmentosa 18,1,0.72,PRPF3,pre-mRNA processing factor 3,/condition/usher-syndrome,"Ear, nose, and throat"
+retinitis pigmentosa 18,1,0.72,PRPF3,pre-mRNA processing factor 3,/condition/usher-syndrome,Eyes and vision
 retinitis pigmentosa 4,1,0.72,RHO,rhodopsin,/condition/usher-syndrome,Eyes and vision
 "progressive external ophthalmoplegia with mitochondrial dna deletions, autosomal dominant, 3",1,0.72,C10orf2,chromosome 10 open reading frame 2,/condition/progressive-external-ophthalmoplegia,Brain and nervous system
 "parkinson disease 5, autosomal dominant",1,0.72,UCHL1,ubiquitin carboxyl-terminal esterase L1 (ubiquitin thiolesterase),/condition/gm2-gangliosidosis-ab-variant,"Bones, muscles, and connective tissues"
@@ -230,47 +230,47 @@ retinitis pigmentosa 4,1,0.72,RHO,rhodopsin,/condition/usher-syndrome,Eyes and v
 nemaline myopathy 1,1,0.72,TPM3,tropomyosin 3,/condition/dilated-cardiomyopathy-with-ataxia-syndrome,Heart and circulation
 "rhizomelic chondrodysplasia punctata, type 3",1,0.72,AGPS,alkylglycerone phosphate synthase,/condition/x-linked-chondrodysplasia-punctata-2,"Bones, muscles, and connective tissues"
 "hemochromatosis, type 2a",2,0.72,HFE2,hemochromatosis type 2 (juvenile),/condition/hereditary-hemochromatosis,"Food, nutrition, and metabolism"
-"cardiomyopathy, dilated, 1m",1,0.72,CSRP3,cysteine and glycine-rich protein 3 (cardiac LIM protein),/condition/familial-dilated-cardiomyopathy,Brain and nervous system
+"cardiomyopathy, dilated, 1m",1,0.72,CSRP3,cysteine and glycine-rich protein 3 (cardiac LIM protein),/condition/familial-dilated-cardiomyopathy,Heart and circulation
 "ceroid lipofuscinosis, neuronal, 6",2,0.72,CLN6,"ceroid-lipofuscinosis, neuronal 6, late infantile, variant",/condition/congenital-neuronal-ceroid-lipofuscinosis,Brain and nervous system
 "parkinson disease 6, autosomal recessive early-onset",1,0.72,PINK1,PTEN induced putative kinase 1,/condition/danon-disease,Brain and nervous system
-"deafness, autosomal recessive 63",1,0.72,LRTOMT,leucine rich transmembrane and O-methyltransferase domain containing,/condition/chst3-related-skeletal-dysplasia,Brain and nervous system
-"muscular dystrophy, limb-girdle, type 1c",1,0.72,CAV3,caveolin 3,/condition/pol-iii-related-leukodystrophy,Brain and nervous system
+"deafness, autosomal recessive 63",1,0.72,LRTOMT,leucine rich transmembrane and O-methyltransferase domain containing,/condition/chst3-related-skeletal-dysplasia,"Ear, nose, and throat"
+"muscular dystrophy, limb-girdle, type 1c",1,0.72,CAV3,caveolin 3,/condition/pol-iii-related-leukodystrophy,"Bones, muscles, and connective tissues"
 thyroid dyshormonogenesis 6,1,0.72,DUOX2,dual oxidase 2,,
 "epileptic encephalopathy, early infantile, 1",3,0.72,ARX,aristaless related homeobox,/condition/pol-iii-related-leukodystrophy,Reproductive system
-"muscular dystrophy, congenital, type 1d",1,0.72,LARGE,like-glycosyltransferase,/condition/berardinelli-seip-congenital-lipodystrophy,"Ear, nose, and throat"
-"cataract, pulverulent, juvenile-onset",1,0.72,MAF,v-maf avian musculoaponeurotic fibrosarcoma oncogene homolog,,
+"muscular dystrophy, congenital, type 1d",1,0.72,LARGE,like-glycosyltransferase,/condition/berardinelli-seip-congenital-lipodystrophy,"Bones, muscles, and connective tissues"
+"cataract, pulverulent, juvenile-onset",1,0.72,MAF,v-maf avian musculoaponeurotic fibrosarcoma oncogene homolog,,Eyes and vision
 "spherocytosis, type 4",1,0.72,SLC4A1,"solute carrier family 4 (anion exchanger), member 1 (Diego blood group)",/condition/hereditary-spherocytosis,Blood/lymphatic system
-"cardiomyopathy, familial hypertrophic, 14",1,0.72,MYH6,"myosin, heavy chain 6, cardiac muscle, alpha",/condition/transthyretin-amyloidosis,Brain and nervous system
+"cardiomyopathy, familial hypertrophic, 14",1,0.72,MYH6,"myosin, heavy chain 6, cardiac muscle, alpha",/condition/transthyretin-amyloidosis,Heart and circulation
 "spastic paraplegia 2, x-linked",1,0.72,PLP1,proteolipid protein 1,/condition/l1-syndrome,Brain and nervous system
 "bartter syndrome, type 4a",3,0.72,BSND,barttin CLCNK-type chloride channel accessory beta subunit,/condition/aarskog-scott-syndrome,Reproductive system
-"muscular dystrophy, limb-girdle, type 1a",1,0.72,MYOT,myotilin,/condition/doors-syndrome,Brain and nervous system
+"muscular dystrophy, limb-girdle, type 1a",1,0.72,MYOT,myotilin,/condition/doors-syndrome,"Bones, muscles, and connective tissues"
 "cardiomyopathy, dilated, 1l",1,0.72,SGCD,"sarcoglycan, delta (35kDa dystrophin-associated glycoprotein)",/condition/dmd-associated-dilated-cardiomyopathy,Heart and circulation
 brugada syndrome 7,1,0.72,SCN3B,"sodium channel, voltage gated, type III beta subunit",/condition/sjogren-syndrome,Mouth and teeth
 "hemophagocytic lymphohistiocytosis, familial, 2",4,0.72,PRF1,perforin 1 (pore forming protein),/condition/familial-hemophagocytic-lymphohistiocytosis,Immune system
 "night blindness, congenital stationary, autosomal dominant 2",1,0.72,PDE6B,"phosphodiesterase 6B, cGMP-specific, rod, beta",/condition/color-vision-deficiency,Eyes and vision
-"osteopetrosis, autosomal recessive 4",1,0.72,CLCN7,"chloride channel, voltage-sensitive 7",/condition/troyer-syndrome,Lungs and breathing
+"osteopetrosis, autosomal recessive 4",1,0.72,CLCN7,"chloride channel, voltage-sensitive 7",/condition/troyer-syndrome,"Bones, muscles, and connective tissues"
 "glycogen storage disease, type ixd",1,0.72,PHKA1,"phosphorylase kinase, alpha 1 (muscle)",/condition/glycogen-storage-disease-type-v,"Bones, muscles, and connective tissues"
 short qt syndrome 1,1,0.72,KCNH2,"potassium channel, voltage gated eag related subfamily H, member 2",/condition/3-hydroxyacyl-coa-dehydrogenase-deficiency,"Bones, muscles, and connective tissues"
 "night blindness, congenital stationary, autosomal dominant 1",1,0.72,RHO,rhodopsin,/condition/x-linked-congenital-stationary-night-blindness,Eyes and vision
 "spastic paraplegia 13, autosomal dominant",1,0.72,HSPD1,heat shock 60kDa protein 1 (chaperonin),/condition/l1-syndrome,"Bones, muscles, and connective tissues"
 "erythrocytosis, familial, 2",2,0.72,VHL,"von Hippel-Lindau tumor suppressor, E3 ubiquitin protein ligase",/condition/hyperkalemic-periodic-paralysis,Brain and nervous system
 "immunodeficiency syndrome, variable",2,0.72,DNMT3B,DNA (cytosine-5-)-methyltransferase 3 beta,/condition/barth-syndrome,Heart and circulation
-"deafness, autosomal recessive 12",2,0.72,CDH23,cadherin-related 23,/condition/hereditary-sensory-neuropathy-type-ia,Immune system
+"deafness, autosomal recessive 12",2,0.72,CDH23,cadherin-related 23,/condition/hereditary-sensory-neuropathy-type-ia,"Ear, nose, and throat"
 "spinocerebellar ataxia, autosomal recessive, with axonal neuropathy",1,0.72,TDP1,tyrosyl-DNA phosphodiesterase 1,/condition/episodic-ataxia,Brain and nervous system
-"deafness, autosomal recessive 59",1,0.72,DFNB59,"deafness, autosomal recessive 59",/condition/autosomal-recessive-hyper-ige-syndrome,Mental health and behavior
+"deafness, autosomal recessive 59",1,0.72,DFNB59,"deafness, autosomal recessive 59",/condition/autosomal-recessive-hyper-ige-syndrome,"Ear, nose, and throat"
 "granulomatous disease, chronic, x-linked",1,0.72,CYBB,"cytochrome b-245, beta polypeptide",/condition/danon-disease,Brain and nervous system
-"cardiomyopathy, familial hypertrophic, 4",1,0.72,MYBPC3,"myosin binding protein C, cardiac",/condition/catecholaminergic-polymorphic-ventricular-tachycardia,"Food, nutrition, and metabolism"
+"cardiomyopathy, familial hypertrophic, 4",1,0.72,MYBPC3,"myosin binding protein C, cardiac",/condition/catecholaminergic-polymorphic-ventricular-tachycardia,Heart and circulation
 mitochondrial dna depletion syndrome 2 (myopathic type),2,0.72,TK2,"thymidine kinase 2, mitochondrial",/condition/tk2-related-mitochondrial-dna-depletion-syndrome-myopathic-form,"Bones, muscles, and connective tissues"
 "ceroid lipofuscinosis, neuronal, 10",1,0.72,CTSD,cathepsin D,/condition/kufs-disease,Brain and nervous system
 holoprosencephaly 3,2,0.72,SHH,sonic hedgehog,/condition/nonsyndromic-holoprosencephaly,Brain and nervous system
 "granulomatous disease, chronic, autosomal recessive, cytochrome b-positive, type i",1,0.72,NCF1,neutrophil cytosolic factor 1,/condition/spinocerebellar-ataxia-type-3,Heart and circulation
 sitosterolemia,2,0.72,ABCG5,"ATP-binding cassette, sub-family G (WHITE), member 5",/condition/sitosterolemia,Blood/lymphatic system
 "parkinson disease 1, autosomal dominant",1,0.72,SNCA,"synuclein, alpha (non A4 component of amyloid precursor)",/condition/galactosemia,"Food, nutrition, and metabolism"
-"deafness, autosomal dominant 13",1,0.72,COL11A2,"collagen, type XI, alpha 2",/condition/autosomal-recessive-cerebellar-ataxia-type-1,Heart and circulation
+"deafness, autosomal dominant 13",1,0.72,COL11A2,"collagen, type XI, alpha 2",/condition/autosomal-recessive-cerebellar-ataxia-type-1,"Ear, nose, and throat"
 "cardiomyopathy, dilated, 1g",1,0.72,TTN,titin,/condition/familial-dilated-cardiomyopathy,Heart and circulation
 focal segmental glomerulosclerosis 2,1,0.72,TRPC6,"transient receptor potential cation channel, subfamily C, member 6",,
 joubert syndrome 6,1,0.72,TMEM67,transmembrane protein 67,/condition/andersen-tawil-syndrome,"Skin, hair, and nails"
 "charcot-marie-tooth disease, type 2b1",1,0.72,LMNA,lamin A/C,/condition/charcot-marie-tooth-disease,"Bones, muscles, and connective tissues"
-"deafness, autosomal dominant 25",2,0.72,SLC17A8,"solute carrier family 17 (vesicular glutamate transporter), member 8",/condition/22q112-deletion-syndrome,Brain and nervous system
+"deafness, autosomal dominant 25",2,0.72,SLC17A8,"solute carrier family 17 (vesicular glutamate transporter), member 8",/condition/22q112-deletion-syndrome,"Ear, nose, and throat"
 "usher syndrome, type ig",2,0.72,USH1G,Usher syndrome 1G (autosomal recessive),/condition/pol-iii-related-leukodystrophy,Kidneys and urinary system
-"muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type a, 6",1,0.72,LARGE,like-glycosyltransferase,/condition/doors-syndrome,Mouth and teeth
+"muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type a, 6",1,0.72,LARGE,like-glycosyltransferase,/condition/doors-syndrome,Brain and nervous system

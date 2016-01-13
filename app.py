@@ -61,7 +61,7 @@ def index():  #remember the function name does not need to match the URL
 	hover = HoverTool(tooltips=[("Disease", "@desc"), ("Score", "$x"), ("Genes", "@genes"),("Category", "@cat")])
 
 
-	p = figure(plot_width=900, plot_height=600, tools=['pan','box_zoom','reset', 'save','resize',hover], title="")
+	p = figure(plot_width=900, plot_height=600, tools=['box_zoom','pan','reset', 'save',hover], title="")
 	p.title_text_font = 'helvetica neue'
 	p.xaxis.axis_label = 'Score'
 	p.yaxis.axis_label = 'Number of Genes'
