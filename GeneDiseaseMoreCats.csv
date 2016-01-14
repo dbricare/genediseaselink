@@ -6,7 +6,7 @@ primary hyperoxaluria type 1,4,0.738144292485995,AGXT,alanine-glyoxylate aminotr
 mucopolysaccharidosis vii,4,0.734742237644871,GUSB,"glucuronidase, beta",/condition/mucopolysaccharidosis-type-vii,"Bones, muscles, and connective tissues"
 biotinidase deficiency,4,0.733853862694847,BTD,biotinidase,/condition/biotinidase-deficiency,Brain and nervous system
 alkaptonuria,1,0.7338337958023621,HGD,"homogentisate 1,2-dioxygenase",/condition/alkaptonuria,"Bones, muscles, and connective tissues"
-oculocutaneous albinism type 1,3,0.733324714794402,TYR,tyrosinase,/condition/chediak-higashi-syndrome,Eyes and vision
+oculocutaneous albinism type 1,3,0.733324714794402,TYR,tyrosinase,/condition/chediak-higashi-syndrome,"Skin, hair, and nails"
 focal dermal hypoplasia,2,0.732670813455874,PORCN,porcupine homolog (Drosophila),/condition/focal-dermal-hypoplasia,"Bones, muscles, and connective tissues"
 congenital contractural arachnodactyly,3,0.7305387000520641,FBN2,fibrillin 2,/condition/congenital-contractural-arachnodactyly,"Bones, muscles, and connective tissues"
 papillorenal syndrome,2,0.729355650813091,PAX2,paired box 2,/condition/renal-coloboma-syndrome,Eyes and vision
@@ -53,12 +53,12 @@ arterial calcification of infancy,2,0.7219845319906558,ENPP1,ectonucleotide pyro
 mosaic variegated aneuploidy syndrome,4,0.7219845319906558,BUB1B,BUB1 mitotic checkpoint serine/threonine kinase B,,
 osteolysis hereditary multicentric,1,0.7219845319906558,MMP2,"matrix metallopeptidase 2 (gelatinase A, 72kDa gelatinase, 72kDa type IV collagenase)",/condition/spinal-muscular-atrophy-with-respiratory-distress-type-1,"Bones, muscles, and connective tissues"
 succinic semialdehyde dehydrogenase deficiency,3,0.7219845319906558,ALDH5A1,"aldehyde dehydrogenase 5 family, member A1",/condition/succinic-semialdehyde-dehydrogenase-deficiency,Brain and nervous system
-"maturity-onset diabetes of the young, type 1",4,0.7217010274205621,HNF4A,"hepatocyte nuclear factor 4, alpha",/condition/neuroferritinopathy,Brain and nervous system
+"maturity-onset diabetes of the young, type 1",4,0.7217010274205621,HNF4A,"hepatocyte nuclear factor 4, alpha",/condition/neuroferritinopathy,"Food, nutrition, and metabolism"
 dyggve-melchior-clausen syndrome,2,0.7217010274205621,DYM,dymeclin,,
 "chondrodysplasia, grebe type",1,0.7217010274205621,GDF5,growth differentiation factor 5,,
-"charcot-marie-tooth disease, type 4c",1,0.7217010274205621,SH3TC2,SH3 domain and tetratricopeptide repeats 2,/condition/cleidocranial-dysplasia,"Bones, muscles, and connective tissues"
-"charcot-marie-tooth disease, type 4b1",4,0.7217010274205621,MTMR2,myotubularin related protein 2,/condition/charcot-marie-tooth-disease,Brain and nervous system
-"charcot-marie-tooth disease, type 4j",1,0.7217010274205621,FIG4,FIG4 phosphoinositide 5-phosphatase,/condition/charcot-marie-tooth-disease,"Bones, muscles, and connective tissues"
+"charcot-marie-tooth disease, type 4c",1,0.7217010274205621,SH3TC2,SH3 domain and tetratricopeptide repeats 2,/condition/cleidocranial-dysplasia,Mouth and teeth
+"charcot-marie-tooth disease, type 4b1",4,0.7217010274205621,MTMR2,myotubularin related protein 2,/condition/charcot-marie-tooth-disease,Mouth and teeth
+"charcot-marie-tooth disease, type 4j",1,0.7217010274205621,FIG4,FIG4 phosphoinositide 5-phosphatase,/condition/charcot-marie-tooth-disease,Mouth and teeth
 "diarrhea 5, with tufting enteropathy, congenital",2,0.7217010274205621,EPCAM,epithelial cell adhesion molecule,/condition/immune-dysregulation-polyendocrinopathy-enteropathy-x-linked-syndrome,"Food, nutrition, and metabolism"
 medullary cystic kidney disease 2,1,0.7217010274205621,UMOD,uromodulin,/condition/polycystic-lipomembranous-osteodysplasia-with-sclerosing-leukoencephalopathy,Mouth and teeth
 "rhizomelic chondrodysplasia punctata, type 1",4,0.7217010274205621,PEX7,peroxisomal biogenesis factor 7,/condition/cantu-syndrome,"Bones, muscles, and connective tissues"
@@ -76,7 +76,7 @@ myeloperoxidase deficiency,2,0.721417522850468,MPO,myeloperoxidase,/condition/al
 "stickler syndrome, type 2",2,0.721134018280375,COL11A1,"collagen, type XI, alpha 1",/condition/crigler-najjar-syndrome,Heart and circulation
 "microcephaly, primary autosomal recessive, 1",1,0.721134018280375,MCPH1,microcephalin 1,/condition/lesch-nyhan-syndrome,Heart and circulation
 ehlers-danlos syndrome type 2,4,0.721134018280375,COL5A1,"collagen, type V, alpha 1",/condition/ehlers-danlos-syndrome,"Skin, hair, and nails"
-"charcot-marie-tooth disease, type 2d",1,0.721134018280375,GARS,glycyl-tRNA synthetase,/condition/charcot-marie-tooth-disease,"Bones, muscles, and connective tissues"
+"charcot-marie-tooth disease, type 2d",1,0.721134018280375,GARS,glycyl-tRNA synthetase,/condition/charcot-marie-tooth-disease,Mouth and teeth
 corticosteroid-binding globulin deficiency,1,0.721134018280375,SERPINA6,"serpin peptidase inhibitor, clade A (alpha-1 antiproteinase, antitrypsin), member 6",/condition/corticosteroid-binding-globulin-deficiency,"Food, nutrition, and metabolism"
 giedion syndrome,1,0.721134018280375,TRPS1,trichorhinophalangeal syndrome I,/condition/mucopolysaccharidosis-type-iv,Brain and nervous system
 purine nucleoside phosphorylase deficiency,3,0.721134018280375,PNP,purine nucleoside phosphorylase,/condition/purine-nucleoside-phosphorylase-deficiency,Immune system
@@ -110,17 +110,17 @@ oto-palato-digital syndrome type 1,2,0.720567009140187,FLNA,"filamin A, alpha",/
 "neutrophilia, hereditary",2,0.720567009140187,CSF3R,colony stimulating factor 3 receptor (granulocyte),/condition/hereditary-leiomyomatosis-and-renal-cell-cancer,"Skin, hair, and nails"
 "fanconi anemia, complementation group d2",2,0.720567009140187,FANCD2,"Fanconi anemia, complementation group D2",/condition/triosephosphate-isomerase-deficiency,Kidneys and urinary system
 "leukodystrophy, hypomyelinating, 2",1,0.720567009140187,GJC2,"gap junction protein, gamma 2, 47kDa",/condition/pol-iii-related-leukodystrophy,Brain and nervous system
-"charcot-marie-tooth disease, type 2e",2,0.720567009140187,NEFL,"neurofilament, light polypeptide",/condition/charcot-marie-tooth-disease,"Bones, muscles, and connective tissues"
+"charcot-marie-tooth disease, type 2e",2,0.720567009140187,NEFL,"neurofilament, light polypeptide",/condition/charcot-marie-tooth-disease,Mouth and teeth
 retinitis pigmentosa 12,1,0.720567009140187,CRB1,"crumbs family member 1, photoreceptor morphogenesis associated",/condition/retinitis-pigmentosa,Eyes and vision
 holoprosencephaly 2,1,0.720567009140187,SIX3,SIX homeobox 3,/condition/nonsyndromic-holoprosencephaly,Brain and nervous system
-"charcot-marie-tooth disease, type 4h",1,0.720567009140187,FGD4,"FYVE, RhoGEF and PH domain containing 4",/condition/ankylosing-spondylitis,"Bones, muscles, and connective tissues"
+"charcot-marie-tooth disease, type 4h",1,0.720567009140187,FGD4,"FYVE, RhoGEF and PH domain containing 4",/condition/ankylosing-spondylitis,Mouth and teeth
 lathosterolosis,3,0.720567009140187,SC5D,sterol-C5-desaturase,,
 synpolydactyly 1,2,0.720567009140187,HOXD13,homeobox D13,,
 "thyroid hormone resistance, generalized, autosomal dominant",1,0.720567009140187,THRB,"thyroid hormone receptor, beta",/condition/isolated-growth-hormone-deficiency,Endocrine system (hormones)
 "immunodysregulation, polyendocrinopathy, and enteropathy, x-linked",3,0.720567009140187,FOXP3,forkhead box P3,/condition/autoimmune-polyglandular-syndrome-type-1,Immune system
 bamforth syndrome,4,0.720567009140187,FOXE1,forkhead box E1,/condition/cytochrome-p450-oxidoreductase-deficiency,Heart and circulation
 "exostoses, multiple, type ii",2,0.720283504570094,EXT2,exostosin glycosyltransferase 2,/condition/multiple-familial-trichoepithelioma,Cancers
-oculocutaneous albinism type 1b,1,0.720283504570094,TYR,tyrosinase,/condition/oculocutaneous-albinism,Immune system
+oculocutaneous albinism type 1b,1,0.720283504570094,TYR,tyrosinase,/condition/oculocutaneous-albinism,"Skin, hair, and nails"
 cone dystrophy 3,1,0.720283504570094,GUCA1A,guanylate cyclase activator 1A (retina),/condition/lattice-corneal-dystrophy-type-ii,"Bones, muscles, and connective tissues"
 long qt syndrome 3,1,0.720283504570094,SCN5A,"sodium channel, voltage gated, type V alpha subunit",/condition/bradyopsia,"Food, nutrition, and metabolism"
 sarcoma family syndrome of li and fraumeni,2,0.720283504570094,TP53,tumor protein p53,/condition/li-fraumeni-syndrome,Cancers
@@ -152,7 +152,7 @@ marles greenberg persaud syndrome,1,0.720283504570094,FREM1,FRAS1 related extrac
 "muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type a, 5",1,0.72,FKRP,fukutin related protein,/condition/metachromatic-leukodystrophy,Brain and nervous system
 asphyxiating thoracic dystrophy 2,1,0.72,IFT80,intraflagellar transport 80,/condition/asphyxiating-thoracic-dystrophy,Eyes and vision
 mitochondrial dna depletion syndrome 5 (encephalomyopathic with or without methylmalonic aciduria),1,0.72,SUCLA2,"succinate-CoA ligase, ADP-forming, beta subunit",/condition/deoxyguanosine-kinase-deficiency,Brain and nervous system
-"charcot-marie-tooth disease, axonal, type 2a2",1,0.72,MFN2,mitofusin 2,/condition/charcot-marie-tooth-disease,Immune system
+"charcot-marie-tooth disease, axonal, type 2a2",1,0.72,MFN2,mitofusin 2,/condition/charcot-marie-tooth-disease,Mouth and teeth
 "spastic paraplegia 7, autosomal recessive",1,0.72,SPG7,spastic paraplegia 7 (pure and complicated autosomal recessive),/condition/l1-syndrome,"Bones, muscles, and connective tissues"
 "neutropenia, severe congenital, autosomal dominant 2",1,0.72,GFI1,growth factor independent 1 transcription repressor,/condition/x-linked-severe-combined-immunodeficiency,Brain and nervous system
 glycine n-methyltransferase deficiency,1,0.72,GNMT,glycine N-methyltransferase,/condition/hypermethioninemia,"Food, nutrition, and metabolism"
@@ -182,7 +182,7 @@ alpha-b crystallinopathy,1,0.72,CRYAB,"crystallin, alpha B",/condition/maple-syr
 amyotrophic lateral sclerosis 8,1,0.72,VAPB,VAMP (vesicle-associated membrane protein)-associated protein B and C,/condition/craniofacial-microsomia,Brain and nervous system
 cerebral cavernous malformations 2,1,0.72,CCM2,cerebral cavernous malformation 2,/condition/maffucci-syndrome,Brain and nervous system
 "deafness, autosomal recessive 74",1,0.72,MSRB3,methionine sulfoxide reductase B3,/condition/costeff-syndrome,"Ear, nose, and throat"
-"charcot-marie-tooth disease, axonal, type 2a1",1,0.72,KIF1B,kinesin family member 1B,/condition/charcot-marie-tooth-disease,Brain and nervous system
+"charcot-marie-tooth disease, axonal, type 2a1",1,0.72,KIF1B,kinesin family member 1B,/condition/charcot-marie-tooth-disease,Mouth and teeth
 narcolepsy 1,3,0.72,HCRT,hypocretin (orexin) neuropeptide precursor,/condition/narcolepsy,Brain and nervous system
 orofacial cleft 5,1,0.72,MSX1,msh homeobox 1,/condition/van-der-woude-syndrome,Mouth and teeth
 "epiphyseal dysplasia, multiple, 1",1,0.72,COMP,cartilage oligomeric matrix protein,/condition/multiple-epiphyseal-dysplasia,"Bones, muscles, and connective tissues"
@@ -192,7 +192,7 @@ retinitis pigmentosa 13,1,0.72,PRPF8,pre-mRNA processing factor 8,/condition/ret
 progressive hearing loss stapes fixation,1,0.72,POU3F4,POU class 3 homeobox 4,/condition/palmoplantar-keratoderma-with-deafness,"Skin, hair, and nails"
 "deafness, autosomal recessive 37",1,0.72,MYO6,myosin VI,/condition/vldlr-associated-cerebellar-hypoplasia,"Ear, nose, and throat"
 joubert syndrome 3,1,0.72,AHI1,Abelson helper integration site 1,/condition/corticosterone-methyloxidase-deficiency,Brain and nervous system
-"tooth agenesis, selective, 3",1,0.72,PAX9,paired box 9,/condition/andermann-syndrome,Brain and nervous system
+"tooth agenesis, selective, 3",1,0.72,PAX9,paired box 9,/condition/andermann-syndrome,Mouth and teeth
 "factor xiii, a subunit, deficiency of",1,0.72,F13A1,"coagulation factor XIII, A1 polypeptide",/condition/factor-xiii-deficiency,Blood/lymphatic system
 "nephrotic syndrome, idiopathic, steroid-resistant",3,0.72,NPHS2,"nephrosis 2, idiopathic, steroid-resistant (podocin)",/condition/marinesco-sjogren-syndrome,Eyes and vision
 "cataract, coppock-like",3,0.72,CRYGC,"crystallin, gamma C",,Eyes and vision
@@ -270,7 +270,7 @@ sitosterolemia,2,0.72,ABCG5,"ATP-binding cassette, sub-family G (WHITE), member 
 "cardiomyopathy, dilated, 1g",1,0.72,TTN,titin,/condition/familial-dilated-cardiomyopathy,Heart and circulation
 focal segmental glomerulosclerosis 2,1,0.72,TRPC6,"transient receptor potential cation channel, subfamily C, member 6",,
 joubert syndrome 6,1,0.72,TMEM67,transmembrane protein 67,/condition/andersen-tawil-syndrome,"Skin, hair, and nails"
-"charcot-marie-tooth disease, type 2b1",1,0.72,LMNA,lamin A/C,/condition/charcot-marie-tooth-disease,"Bones, muscles, and connective tissues"
+"charcot-marie-tooth disease, type 2b1",1,0.72,LMNA,lamin A/C,/condition/charcot-marie-tooth-disease,Mouth and teeth
 "deafness, autosomal dominant 25",2,0.72,SLC17A8,"solute carrier family 17 (vesicular glutamate transporter), member 8",/condition/22q112-deletion-syndrome,"Ear, nose, and throat"
 "usher syndrome, type ig",2,0.72,USH1G,Usher syndrome 1G (autosomal recessive),/condition/pol-iii-related-leukodystrophy,Kidneys and urinary system
 "muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type a, 6",1,0.72,LARGE,like-glycosyltransferase,/condition/doors-syndrome,Brain and nervous system
