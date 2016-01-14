@@ -3,7 +3,8 @@
   <head>
     <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.css" type="text/css" />
     <link rel=stylesheet type="text/css" href='{{ url_for('static',filename='style.css')}}'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:600,700' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.js"></script>
     {{ script | safe }}
   </head>
@@ -51,7 +52,7 @@
       </ul>
 
       <h2 class="subheading">Data analysis</h2>
-      <p>The metric constructed here is based on work done for the DisGeNet database. The weighted score described below represents a metric [0,1] that describes the quality of the established link between the identified gene and associated diseases. Each gene may influence several diseases and each diseases may be influenced by several genes.</p>
+      <p>The metric constructed here is based on work done for the DisGeNet database. The weighted score described below represents a metric [0,1] that describes the quality of the established link between the identified gene and associated diseases. Each gene may influence several diseases and each disease may be influenced by several genes.</p>
       <ul><b><i>Score = ( WUniProt + WCTDhuman + WClinVar ) + ( WRat + WMouse ) + ( WGAD + WLHGDN + WBeFree )</b></i></ul>
   	  <ul><b><i>Number of genes per disease</b> (fewer gene targets indicate more well-defined and easier to treat disease pathology)</i></ul>
       <p>For the <b>score</b> calculation, each variable is either <i>0 or some positive value</i> based on whether that gene-disease association appears in the corresponding database. The first term in parentheses represents curated databases, the second term is predicted databases and the third term takes into account the number of publications where the link appears. The <a href="http://www.disgenet.org/web/DisGeNET/menu/dbinfo">DisGeNet About Page</a> has more detailed information.</p>
