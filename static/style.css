@@ -7,8 +7,8 @@ h1              { font-size: 2.6em; border-bottom: 2px solid #ccc;
                   border-top-right-radius: 15px; */ }
 h2              { font-size: 1.6em; }
 h3				{ font-size: 1.4em; }
-li				{ font-size: 1.2em; margin: 18px; }
-p				{ font-size: 1.2em; }
+li				{ margin: 18px; }
+/* p				{ font-size: 1.2em; } */
 img				{ max-width: 100%; }
 
 
