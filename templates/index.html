@@ -3,8 +3,8 @@
   <head>
     <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.css" type="text/css" />
     <link rel=stylesheet type="text/css" href='{{ url_for('static',filename='style.css')}}'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Raleway:600,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.js"></script>
     {{ script | safe }}
   </head>
@@ -15,30 +15,34 @@
       <h1 id="grad1" class="headertop">Examining genetic links to disease</h1>
       <h2 id="grad1" class="headerbtm">A data-centric approach to drug development</h2>
       </div>
+      
 	<div class="page-primary">
-	  <!-- <div height="100">&nbsp;</div> -->
+
+	  
       <h2 class="subheading">Advantages</h2>
-      <p>Measuring the <b><i>strength of association</i></b> between a medical condition and its genetic link will enable pharmaceutical companies to more efficiently develop new therapies. Specifically:</p>
+      <p>Measuring the <b><i>strength of association between a medical condition and its genetic link</i></b> will enable pharmaceutical companies to more efficiently develop new therapies. Specifically:</p>
 
       <ol>
-      <li>More accurate determination of the appropriate cellular pathway to target will improve the design and development of small molecule or biologic therapies that can counteract the effects of a disease.</li>
-      <li>Provides researchers with human-validated targets and eliminates the need for traditional cell culture and animal model experiments, whose results aren't guaranteed to translate to humans.</li>
-      <li>Laboratory-based drug discovery is very costly, time-consuming, and suffers from a low success rate.</li>
-      <li>Gene-editing technologies such as CRISPR-Cas9 currently show strong promise as an entirely new treatment approach. If a disease-causing gene can be identified, it may be possible to develop a gene therapy to treat the genetic source directly.</li>
-      </ol><br>
+      <li>Identifying relationships between cellular pathways improves understanding of disease pathology.</li>
+      <li>Providing researchers with human-validated targets eliminates the need for traditional cell culture and animal model experiments, whose results aren't guaranteed to translate to humans.</li>
+      <li>Alternative laboratory-based drug discovery is very costly, time-consuming, and suffers from a low success rate.</li>
+      <li>Gene-editing technologies such as <a href="https://en.wikipedia.org/wiki/CRISPR">CRISPR-Cas</a> currently show strong promise as an entirely new treatment approach. If a disease-causing gene can be identified, it may be possible to develop a gene therapy to treat the genetic source directly.</li>
+      </ol>
       
-		<h3 class="caption">Gene-disease associations and therapuetic relevance</h3>
-		<p>The highest priority disease candidates are found in the bottom right side of the chart, with a high score and low number of genes.</p>
+		<h2 class="caption">Gene-disease association and therapeutic relevance</h2>
+		<p><b><u>Quick interpretation:</u></b>&nbsp; the highest priority disease candidates are found toward the bottom and right-hand side of the chart. These regions correspond to a strong association (or <b>score</b>) and low number of genes per disease.</p>
+		<p><b><u>Additional insights:</u></b>&nbsp; please see the <a href="#description">data collection, organization, and analysis</a> sections below for additional information.</p>
         <div class="bokeh">
         {{ div | safe }}
         </div>
-        <p>&nbsp;</p>
-        <h3 class="caption">Breakdown by disease area</h3>
+
+        <h2 class="caption">Breakdown by disease area</h2>
         <div class="mpl">
         <img src="static/catdist.png">
         </div>
+
         
-	  <h2 class="subheading">Data collection</h2>
+	  <h2 class="subheading" id="description">Data collection</h2>
       <p>Data is contributed primarily by academic researchers who share their results through a variety of public databases.</p>
 
       <ul>
@@ -46,16 +50,46 @@
       <li>A list of gene-disease associations from peer-reviewed journals and several public databases is available at <a href="http://www.disgenet.org/">DisGeNet</a>. This database is current as of August 2015. This resource compiles information from:</li>
         <ul>
         <li>Curated databases: <a href="http://www.uniprot.org/">UniProt</a>, <a href="http://ctdbase.org/">Comparative Toxicogenomics Database</a>, <a href="http://www.ncbi.nlm.nih.gov/clinvar/">ClinVar</a>.</li>
-        <li>Predicted databases: <a href="http://ctdbase.org/">Comparative Toxicogenomics Database</a>, <a href="http://www.informatics.jax.org/">Mouse Genome Database</a>, <a href="http://rgd.mcw.edu/">Rat Genome Database</a>.</li>
+        <li>Automated databases: <a href="http://ctdbase.org/">Comparative Toxicogenomics Database</a>, <a href="http://www.informatics.jax.org/">Mouse Genome Database</a>, <a href="http://rgd.mcw.edu/">Rat Genome Database</a>.</li>
         <li>Literature resources: <a href="http://geneticassociationdb.nih.gov/">Genetic Association Database</a>, <a href="http://www.dbs.ifi.lmu.de/~bundschu/LHGDN.html">Literature-derived Human Gene-Disease Network </a>, <a href="http://ibi.imim.es/befree/">BeFree</a>.</li>
         </ul>
+      <li>The <a href="http://human-phenotype-ontology.github.io/">Human Phenotype Ontology</a> database contains human-only associations between genes and diseases organized by phenotype. It is designed not only to identify gene-disease associations but also demonstrate how these links can be put to use by the medical community.</li>
       </ul>
+      
+      <h2 class="subheading">Data organization</h2>
+      <table cellspacing="16px" style="margin: 0px auto;">
+      <tr>
+      <th>Source</th>
+      <th>Format</th>
+      <th>Extraction</th>
+      <th>Content</th>
+      </tr>
+      <tr>
+      <td>NIH Genetics Reference</td>
+      <td>HTML</td>
+      <td>Web scraping with beautiful soup</td>
+      <td>Disease categories, few GDAs <br>(Gene-Disease Associations)</td>
+      </tr>
+      <tr>
+      <td>DisGeNet</td>
+      <td>CSV</td>
+      <td>Download</td>
+      <td>>420000 GDAs</td>
+      </tr>
+      <tr>
+      <td>Human Phenotype Ontology</td>
+      <td>SQL & TSV</td>
+      <td>Queried through sqlite3, ipython, and pandas</td>
+      <td>>115000 GDAs</td>
+      </tr>
+      </table>
+      
 
       <h2 class="subheading">Data analysis</h2>
-      <p>The metric constructed here is based on work done for the DisGeNet database. The weighted score described below represents a metric [0,1] that describes the quality of the established link between the identified gene and associated diseases. Each gene may influence several diseases and each disease may be influenced by several genes.</p>
-      <ul><b><i>Score = ( WUniProt + WCTDhuman + WClinVar ) + ( WRat + WMouse ) + ( WGAD + WLHGDN + WBeFree )</b></i></ul>
+      <p>The metrics constructed here are based on work done for the DisGeNet database. The weighted score described below represents a metric [0,1] that describes the quality of the established link between the identified gene and associated diseases. Each gene may influence several diseases and each disease may be influenced by several genes.</p>
+      <ul><b><i>Strength of association</b> = ( WUniProt + WCTDhuman + WClinVar ) + ( WRat + WMouse ) + ( WGAD + WLHGDN + WBeFree )</i></ul>
   	  <ul><b><i>Number of genes per disease</b> (fewer gene targets indicate more well-defined and easier to treat disease pathology)</i></ul>
-      <p>For the <b>score</b> calculation, each variable is either <i>0 or some positive value</i> based on whether that gene-disease association appears in the corresponding database. The first term in parentheses represents curated databases, the second term is predicted databases and the third term takes into account the number of publications where the link appears. The <a href="http://www.disgenet.org/web/DisGeNET/menu/dbinfo">DisGeNet About Page</a> has more detailed information.</p>
+      <p>For the <b>strength of association</b> calculation, each variable is either <i>0 or some positive value</i> based on whether that gene-disease association appears in the corresponding database. The first term in parentheses represents curated databases, the second term is predicted databases and the third term takes into account the number of publications where the link appears. The <a href="http://www.disgenet.org/web/DisGeNET/menu/dbinfo">DisGeNet About Page</a> has more detailed information.</p>
 
       <!--<h2 class="subheading">Data visualization</h2>
       <p>The strength of association between a particular gene and medical condition is directly related to the promise of generating a successful therapy. Large and small pharmaceutical companies who have the expertise to rapidly generate drug candidates can optimize the direction of their R&D efforts.</p><br>-->

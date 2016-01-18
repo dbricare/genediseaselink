@@ -63,8 +63,8 @@ def index():  #remember the function name does not need to match the URL
 
 	p = figure(plot_width=900, plot_height=600, tools=['box_zoom','pan','reset', 'save',hover], title="")
 	p.title_text_font = 'helvetica neue'
-	p.xaxis.axis_label = 'Score'
-	p.yaxis.axis_label = 'Number of Genes'
+	p.xaxis.axis_label = 'Strength of Association  ( Higher is Better )'
+	p.yaxis.axis_label = 'Gene Associations Per Disease  ( Lower is Better )'
 	p.xaxis.axis_label_text_font = 'helvetica neue'
 	p.yaxis.axis_label_text_font = 'helvetica neue'
 
