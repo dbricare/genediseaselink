@@ -4,7 +4,7 @@ a, h1, h2       { text-decoration: none; color: #1f77b4; font-weight: 400; }
 h1              {   }
 h2              { font-size: 1.6em; padding: 0; padding-top: 16px; }
 h3				{ font-size: 1.2em; margin: 0px auto; padding: 0px; }
-li				{ margin: 18px; }
+li				{ margin-top: 12px; margin-bottom: 12px; }
 img				{ max-width: 100%; }
 th              { border-bottom: 1px solid #aaa; }
 td              { padding: 2px; }
@@ -20,10 +20,16 @@ b               { font-weight: 400; }
                   background-color: #1f77b4; margin: 0; }
 .page           { border: 0px solid #fff; padding: 0px; background: white; }
 .page-primary	{ padding: 0px; border: 0px solid #000; width: 90%; margin: auto; }
-.subheading		{ font-family: 'Raleway', sans-serif; color: #444; }
-.caption		{ font-family: 'Raleway', sans-serif; text-align: center; color: #444; }
-.bokeh			{ border: 1px solid #777; padding: 23px; text-align: left; }
-.mpl			{ border: 1px solid #777; padding: 23px; text-align: center; 
+
+.figlink        { float: right; width: 45%; margin: 0px auto; padding-left: 16px; 
+                  padding-bottom: 16px; }
+.fcap           { font-family: 'Raleway', sans-serif; text-align: center; 
+                  font-weight: 600; }
+.subheading		{ color: #444; }
+.caption		{ font-family: 'Raleway', sans-serif; text-align: center; color: #444;
+                  clear: both; }
+.bokeh			{ border: 1px solid #777; padding: 24px; text-align: left; }
+.mpl			{ border: 1px solid #777; padding: 24px; text-align: center; 
 				  max-width: 80%; margin: 0 auto; }
 .dtbl           { margin: 0px auto; }
 .footer			{ height: 120px; border-top: 1px solid #ccc; padding-top: 16px; }

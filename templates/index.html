@@ -17,26 +17,32 @@
       </div>
       
 	<div class="page-primary">
-
+	
+      <figure class="figlink" >
+        <img src="static/gda_overview.png" width="100%">
+        <figcaption class="fcap">Some diseases may be caused by multiple genes and a single gene may influence one or more diseases.</figcaption>
+      </figure>
 	  
       <h2 class="subheading">Advantages</h2>
-      <p>Measuring the <b><i>strength of association between a medical condition and its genetic link</i></b> will enable pharmaceutical companies to more efficiently develop new therapies. Specifically:</p>
+
+
+      <p>Measuring the <b><i>strength of association between a medical condition and its genetic link</i></b> will enable pharmaceutical companies to more efficiently develop new therapies. Specifically:</p>  
 
       <ol>
-      <li>Identifying relationships between cellular pathways improves understanding of disease pathology.</li>
-      <li>Providing researchers with human-validated targets eliminates the need for traditional cell culture and animal model experiments, whose results aren't guaranteed to translate to humans.</li>
+      <li>Identifying relationships among cellular pathways improves understanding of disease pathology.</li>
+      <li>Providing researchers with human-validated targets eliminates the need for traditional cell culture and animal model experiments whose results aren't guaranteed to translate to humans.</li>
       <li>Alternative laboratory-based drug discovery is very costly, time-consuming, and suffers from a low success rate.</li>
       <li>Gene-editing technologies such as <a href="https://en.wikipedia.org/wiki/CRISPR">CRISPR-Cas</a> currently show strong promise as an entirely new treatment approach. If a disease-causing gene can be identified, it may be possible to develop a gene therapy to treat the genetic source directly.</li>
       </ol>
-      
+
 		<h2 class="caption">Gene-disease association and therapeutic relevance</h2>
-		<p><b><u>Quick interpretation:</u></b>&nbsp; the highest priority disease candidates are found toward the bottom and right-hand side of the chart. These regions correspond to a strong association (or <b>score</b>) and low number of genes per disease.</p>
-		<p><b><u>Additional insights:</u></b>&nbsp; please see the <a href="#description">data collection, organization, and analysis</a> sections below for additional information.</p>
+		<p><u><b>Quick interpretation:</b></u>&nbsp; the highest priority disease candidates are found toward the bottom and right-hand side of the chart. These regions correspond to a strong association (or <b>score</b>) and low number of genes per disease.</p>
+		<p><u><b>Additional insights:</b></u>&nbsp; please see the <a href="#description">data collection, organization, and analysis</a></i> sections below for additional information.</p>
         <div class="bokeh">
         {{ div | safe }}
         </div>
 
-        <h2 class="caption">Breakdown by disease area</h2>
+        <h2 class="caption">Gene-disease association by disease area</h2>
         <div class="mpl">
         <img src="static/catdist.png">
         </div>
