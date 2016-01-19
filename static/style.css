@@ -2,7 +2,7 @@ body            { font-family: 'Source Sans Pro', helvetica neue, sans-serif;
                   background: White; margin: 0px; font-size: 20px; font-weight: 300; }
 a, h1, h2       { text-decoration: none; color: #1f77b4; font-weight: 400; }
 h1              {   }
-h2              { font-size: 1.6em; padding: 0; padding-top: 16px; }
+h2              { font-size: 1.6em; padding: 0; }
 h3				{ font-size: 1.2em; margin: 0px auto; padding: 0px; }
 li				{ margin-top: 12px; margin-bottom: 12px; }
 img				{ max-width: 100%; }
@@ -10,22 +10,23 @@ th              { border-bottom: 1px solid #aaa; }
 td              { padding: 2px; }
 b               { font-weight: 400; }
 
-
+.box            { box-shadow: 0px 0px 10px #ccc; padding: 20px; margin: 0 auto;
+                  width: 92%; }
 .header			{ border-bottom: 1px solid #ccc; /*height: 150px;*/ }
-.headertop		{ font-size: 2.4em; padding: 10px; padding-top: 24px; padding-bottom:         
+.headertop		{ font-size: 2.4em; padding: 10px; padding-top: 20px; padding-bottom:         
                   12px; color: #fff; background-color: #1f77b4; margin: 0;  border-bottom: 
-                  2px solid #ccc; }
+                  2px solid #ccc; font-weight: 600; }
 .headerbtm		{ font-size: 1.4em; padding: 10px; padding-top: 12px; 
-                  padding-bottom: 32px;  color: #fff; margin: 0; 
+                  padding-bottom: 24px;  color: #fff; margin: 0; 
                   background-color: #1f77b4; margin: 0; }
 .page           { border: 0px solid #fff; padding: 0px; background: white; }
 .page-primary	{ padding: 0px; border: 0px solid #000; width: 90%; margin: auto; }
 
-.figlink        { float: right; width: 45%; margin: 0px auto; padding-left: 16px; 
-                  padding-bottom: 16px; }
+.figgda        { float: right; width: 45%; margin: 0px auto; padding-left: 16px; 
+                  padding-bottom: 16px; padding-top: 0px; }
 .fcap           { font-family: 'Raleway', sans-serif; text-align: center; 
                   font-weight: 600; }
-.subheading		{ color: #444; }
+.subheading		{ color: #444; /* clear: both; */ }
 .caption		{ font-family: 'Raleway', sans-serif; text-align: center; color: #444;
                   clear: both; }
 .bokeh			{ border: 1px solid #777; padding: 24px; text-align: left; }

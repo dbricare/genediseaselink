@@ -17,16 +17,16 @@
       </div>
       
 	<div class="page-primary">
-	
-      <figure class="figlink" >
+	      <figure class="figgda" >
         <img src="static/gda_overview.png" width="100%">
         <figcaption class="fcap">Some diseases may be caused by multiple genes and a single gene may influence one or more diseases.</figcaption>
       </figure>
+      <p>&nbsp;</p>
+      <p><b><i>The strength of association between a particular gene and medical condition can help determine the probability of generating a successful therapy for this medical condition.</i></b> Here, strength is determined by the amount and quality of data from computational and laboratory investigations of a specific gene-disease association. This data-centric approach can help large and small pharmaceutical companies optimize the direction of their R&D efforts.</p>
 	  
       <h2 class="subheading">Advantages</h2>
 
-
-      <p>Measuring the <b><i>strength of association between a medical condition and its genetic link</i></b> will enable pharmaceutical companies to more efficiently develop new therapies. Specifically:</p>  
+      <p>Measuring the strength of <b>gene-disease associations (GDAs)</b> has the following direct and indirect benefits:</p>  
 
       <ol>
       <li>Identifying relationships among cellular pathways improves understanding of disease pathology.</li>
@@ -35,8 +35,11 @@
       <li>Gene-editing technologies such as <a href="https://en.wikipedia.org/wiki/CRISPR">CRISPR-Cas</a> currently show strong promise as an entirely new treatment approach. If a disease-causing gene can be identified, it may be possible to develop a gene therapy to treat the genetic source directly.</li>
       </ol>
 
-		<h2 class="caption">Gene-disease association and therapeutic relevance</h2>
-		<p><u><b>Quick interpretation:</b></u>&nbsp; the highest priority disease candidates are found toward the bottom and right-hand side of the chart. These regions correspond to a strong association (or <b>score</b>) and low number of genes per disease.</p>
+        <p>&nbsp;</p>
+        </div>
+        <div class="box">
+		<h2 class="caption">Therapeutic potential from gene-disease associations</h2>
+		<p><u><b>Quick interpretation:</b></u>&nbsp; the diseases with highest potential  are found toward the bottom and right-hand side of the chart. These regions correspond to a low number of genes per disease and strong association (or <b>score</b>) respectively.</p>
 		<p><u><b>Additional insights:</b></u>&nbsp; please see the <a href="#description">data collection, organization, and analysis</a></i> sections below for additional information.</p>
         <div class="bokeh">
         {{ div | safe }}
@@ -46,8 +49,9 @@
         <div class="mpl">
         <img src="static/catdist.png">
         </div>
-
-        
+        </div>
+    <div class="page-primary">
+    <p>&nbsp;</p>        
 	  <h2 class="subheading" id="description">Data collection</h2>
       <p>Data is contributed primarily by academic researchers who share their results through a variety of public databases.</p>
 
@@ -97,9 +101,12 @@
   	  <ul><b><i>Number of genes per disease</b> (fewer gene targets indicate more well-defined and easier to treat disease pathology)</i></ul>
       <p>For the <b>strength of association</b> calculation, each variable is either <i>0 or some positive value</i> based on whether that gene-disease association appears in the corresponding database. The first term in parentheses represents curated databases, the second term is predicted databases and the third term takes into account the number of publications where the link appears. The <a href="http://www.disgenet.org/web/DisGeNET/menu/dbinfo">DisGeNet About Page</a> has more detailed information.</p>
 
-      <!--<h2 class="subheading">Data visualization</h2>
-      <p>The strength of association between a particular gene and medical condition is directly related to the promise of generating a successful therapy. Large and small pharmaceutical companies who have the expertise to rapidly generate drug candidates can optimize the direction of their R&D efforts.</p><br>-->
 
+
+      <h2 class="subheading">Future work</h2>
+      <p>Updates planned:</p>
+      <ul><li>An outlier detection model to objectively determine gene-disease associations with the greatest potential for therapeutic success.</li>
+      <li>More interactions to sort and select GDA categories from Bokeh plot.</li></ul>
     
         <p>&nbsp;</p>
         </div>
