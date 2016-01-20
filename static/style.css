@@ -28,7 +28,7 @@ b               { font-weight: 400; }
                   padding-bottom: 24px; padding-top: 0px; }
 .fcap           { font-family: 'Raleway', sans-serif; text-align: center; 
                   font-weight: 600; }
-.subheading		{ color: #444; clear: both; }
+.subheading		{ font-family: 'Raleway', color: #444; clear: both; }
 .caption		{ font-family: 'Raleway', sans-serif; text-align: center; color: #444; }
 .bokeh			{ border: 1px solid #777; padding: 24px; text-align: left; }
 .mpl			{ border: 1px solid #777; padding: 24px; text-align: center; 
