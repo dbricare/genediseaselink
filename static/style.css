@@ -1,17 +1,18 @@
 body            { font-family: 'Source Sans Pro', helvetica neue, sans-serif; 
                   background: White; margin: 0px; font-size: 20px; font-weight: 300; }
 a, h1, h2       { text-decoration: none; color: #1f77b4; font-weight: 400; }
-h1              {   }
-h2              { font-size: 1.6em; padding: 0; }
+
+h2              { font-size: 1.6em; padding: 0px; }
 h3				{ font-size: 1.2em; margin: 0px auto; padding: 0px; }
 li				{ margin-top: 12px; margin-bottom: 12px; }
 img				{ max-width: 100%; }
 th              { border-bottom: 1px solid #aaa; }
-td              { padding: 2px; }
+td              { padding: 2px; vertical-align: top; }
 b               { font-weight: 400; }
 
-.box            { box-shadow: 0px 0px 10px #ccc; padding: 20px; margin: 0 auto;
-                  width: 92%; }
+.box            { box-shadow: 0px 0px 10px #ccc; padding: 20px; padding-top: 1px;
+                  margin: 0 auto; width: 92%; 
+                  clear: both; }
 .header			{ border-bottom: 1px solid #ccc; /*height: 150px;*/ }
 .headertop		{ font-size: 2.4em; padding: 10px; padding-top: 20px; padding-bottom:         
                   12px; color: #fff; background-color: #1f77b4; margin: 0;  border-bottom: 
@@ -22,13 +23,13 @@ b               { font-weight: 400; }
 .page           { border: 0px solid #fff; padding: 0px; background: white; }
 .page-primary	{ padding: 0px; border: 0px solid #000; width: 90%; margin: auto; }
 
-.figgda        { float: right; width: 45%; margin: 0px auto; padding-left: 16px; 
-                  padding-bottom: 16px; padding-top: 0px; }
+.intro          { padding-top: 16px; }
+.figgda         { float: right; width: 45%; margin: 0px auto; padding-left: 24px; 
+                  padding-bottom: 24px; padding-top: 0px; }
 .fcap           { font-family: 'Raleway', sans-serif; text-align: center; 
                   font-weight: 600; }
-.subheading		{ color: #444; /* clear: both; */ }
-.caption		{ font-family: 'Raleway', sans-serif; text-align: center; color: #444;
-                  clear: both; }
+.subheading		{ color: #444; clear: both; }
+.caption		{ font-family: 'Raleway', sans-serif; text-align: center; color: #444; }
 .bokeh			{ border: 1px solid #777; padding: 24px; text-align: left; }
 .mpl			{ border: 1px solid #777; padding: 24px; text-align: center; 
 				  max-width: 80%; margin: 0 auto; }
