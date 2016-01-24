@@ -23,12 +23,15 @@
       </figure>
       <p class="intro">The strength of association between a particular gene and medical condition can help determine the probability of generating a successful therapy.</p>
       <p>If the gene-disease link is strong, a therapy that targets the associated gene is  likely to successfully treat the disease.</p>
-      <p>Here, strength is determined by the amount and quality of data from computational and laboratory investigations of a specific gene-disease association.</p>
+      <p>Strength of association is determined by the amount and quality of data from computational and laboratory investigations of a specific gene-disease pair.</p>
 <!--       <p>This data-centric approach is designed to help large and small pharmaceutical companies optimize the direction of their R&D efforts.</p> -->
 	  
       <h2 class="subheading">Advantages of data-centric approach</h2>
 
-      <p>Measuring the strength of <b>gene-disease associations (GDAs)</b> has several direct and indirect benefits:</p>  
+    <p><a href="https://en.wikipedia.org/wiki/Drug_development">Drug development</a> is becoming increasingly costly and time-consuming. <a href="http://csdd.tufts.edu/news/complete_story/pr_outlook_2016">A report from early 2016 by the Tufts Center for the Study of Drug development</a> notes that recent process improvements have failed to rein in these costs which average $2.6 billion and 15 years of development time.</p> 
+    <p>A high percentage of this effort may be wasted on failed drugs that never obtain FDA approval. Drug candidates that make it out of the laboratory and into clinic trials have a very low success rate of around 10% according to a <a href="http://www.nature.com/nbt/journal/v32/n1/abs/nbt.2786.html">2014 Nature article</a>.</p>
+
+      <p><b>Measuring the strength of gene-disease associations (GDAs) has several direct and indirect benefits:</b></p>  
 
       <ol>
       <li>Identifying relationships among cellular pathways improves understanding of disease pathology.</li>
@@ -68,6 +71,7 @@
       <li>The <a href="http://human-phenotype-ontology.github.io/">Human Phenotype Ontology</a> database contains human-only associations between genes and diseases organized by phenotype. It is designed not only to identify gene-disease associations but also demonstrate how these links can be put to use by the medical community.</li>
       </ul>
       
+      <p>&nbsp;</p>
       <h2 class="subheading">Data organization</h2>
       <table cellspacing="12px" style="margin: 0px auto;">
       <tr>
@@ -79,24 +83,24 @@
       <tr>
       <td>NIH Genetics Reference</td>
       <td>HTML</td>
-      <td>Web scraping with beautiful soup</td>
+      <td>Web scrape with beautiful soup</td>
       <td>Disease categories, few GDAs</td>
       </tr>
       <tr>
       <td>DisGeNet</td>
       <td>CSV</td>
-      <td>Download</td>
+      <td>Download and load into pandas dataframe</td>
       <td>>420000 GDAs</td>
       </tr>
       <tr>
       <td>Human Phenotype Ontology</td>
       <td>SQL & TSV</td>
-      <td>Queried through sqlite3, ipython, and pandas</td>
+      <td>Query through sqlite3, ipython, and pandas</td>
       <td>>115000 GDAs</td>
       </tr>
       </table>
       
-
+      <p>&nbsp;</p>
       <h2 class="subheading">Data analysis</h2>
       <p>The metrics constructed here are based on work done for the DisGeNet database. The weighted score described below represents a metric [0,1] that describes the quality of the established link between the identified gene and associated diseases. Each gene may influence several diseases and each disease may be influenced by several genes.</p>
       <ul><b><i>Strength of association</b> = ( WUniProt + WCTDhuman + WClinVar ) + ( WRat + WMouse ) + ( WGAD + WLHGDN + WBeFree )</i></ul>
@@ -105,7 +109,7 @@
       <p>The <a href="http://www.disgenet.org/web/DisGeNET/menu/dbinfo">DisGeNet About Page</a> has more detailed information.</p>
 
 
-
+      <p>&nbsp;</p>
       <h2 class="subheading">Future work</h2>
       <p>Updates planned:</p>
       <ul><li>An outlier detection model to objectively determine gene-disease associations with the greatest potential for therapeutic success.</li>
