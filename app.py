@@ -75,7 +75,8 @@ def index():  #remember the function name does not need to match the URL
 
 #     script, div = autoload_static(p, CDN, "")
     script, div = components(p)
-    updated=date.today().strftime('%Y-%b-%d')
+#     updated=date.today().strftime('%Y-%b-%d')
+    updated = 'January 27, 2016'
 
     return render_template('index.html', script=script, div=div, updated=updated)
 
