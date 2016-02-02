@@ -9,7 +9,7 @@ alkaptonuria	1	HGD	homogentisate 1,2-dioxygenase	/condition/alkaptonuria	Bones, 
 oculocutaneous albinism type 1	3	TYR	tyrosinase	/condition/chediak-higashi-syndrome	Skin, hair, and nails	0.0	0.0	0.733324714794402	0.5866597718355216
 focal dermal hypoplasia	2	PORCN	porcupine homolog (Drosophila)	/condition/focal-dermal-hypoplasia	Bones, muscles, and connective tissues	0.0	4.0	0.732670813455874	0.6861366507646992
 congenital contractural arachnodactyly	3	FBN2	fibrillin 2	/condition/congenital-contractural-arachnodactyly	Bones, muscles, and connective tissues	0.0	0.0	0.7305387000520641	0.5844309600416513
-papillorenal syndrome	2	PAX2	paired box 2	/condition/renal-coloboma-syndrome	Eyes and vision	0.0	0.0	0.729355650813091	0.5834845206504727
+papillorenal syndrome	2	PAX2	paired box 2	/condition/renal-coloboma-syndrome	Kidneys and urinary system	0.0	0.0	0.729355650813091	0.5834845206504727
 paralysis, hyperkalemic periodic	3	SCN4A	sodium channel, voltage gated, type IV alpha subunit	/condition/hyperkalemic-periodic-paralysis	Bones, muscles, and connective tissues	0.0	0.0	0.7293266867469771	0.5834613493975817
 ulnar-mammary syndrome	4	TBX3	T-box 3	/condition/breast-cancer	Cancers	0.0	0.0	0.72850513710281	0.5828041096822479
 blepharophimosis, ptosis, and epicanthus inversus	3	FOXL2	forkhead box L2	/condition/3mc-syndrome	Bones, muscles, and connective tissues	0.0	0.0	0.728270663491315	0.582616530793052
@@ -25,7 +25,7 @@ hyperparathyroidism 1	4	MEN1	multiple endocrine neoplasia I	/condition/familial-
 glycogen storage disease ib	2	SLC37A4	solute carrier family 37 (glucose-6-phosphate transporter), member 4	/condition/glycogen-storage-disease-type-iv	Food, nutrition, and metabolism	0.0	0.0	0.723685559411218	0.5789484475289745
 bestrophinopathy	1	BEST1	bestrophin 1		Eyes and vision	0.0	3.6	0.723685559411218	0.6689484475289744
 platelet glycoprotein iv deficiency	3	CD36	CD36 molecule (thrombospondin receptor)	/condition/pmm2-congenital-disorder-of-glycosylation	Food, nutrition, and metabolism	0.0	0.0	0.723685559411218	0.5789484475289745
-lipoid congenital adrenal hyperplasia	4	STAR	steroidogenic acute regulatory protein	/condition/x-linked-infantile-nystagmus	Eyes and vision	0.0	0.0	0.723685559411218	0.5789484475289745
+lipoid congenital adrenal hyperplasia	4	STAR	steroidogenic acute regulatory protein	/condition/x-linked-infantile-nystagmus	Kidneys and urinary system	0.0	0.0	0.723685559411218	0.5789484475289745
 alpha-mannosidosis	1	MAN2B1	mannosidase, alpha, class 2B, member 1	/condition/alpha-mannosidosis	Food, nutrition, and metabolism	0.0	4.0	0.723685559411218	0.6789484475289744
 thiopurine s methyltranferase deficiency	1	TPMT	thiopurine S-methyltransferase	/condition/thiopurine-s-methyltransferase-deficiency	Blood/lymphatic system	0.0	0.0	0.723402054841124	0.5787216438728991
 muscular dystrophy congenital, merosin negative	3	LAMA2	laminin, alpha 2	/condition/kniest-dysplasia	Bones, muscles, and connective tissues	0.0	0.0	0.723402054841124	0.5787216438728991

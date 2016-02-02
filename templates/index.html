@@ -48,14 +48,14 @@
 		<h2 class="caption">Therapeutic potential of gene-disease associations</h2>
 		<p><u><b>Quick interpretation:</b></u>&nbsp; the diseases with highest potential  are found toward the bottom and right-hand side of the chart. These regions correspond to a low number of genes per disease and strong association (or <b>score</b>) respectively.</p>
 		<p><u><b>Additional insights:</b></u>&nbsp; the <a href="#description">data collection, organization, and analysis</a></i> sections below contain additional information.</p>
-        <a name="box"></a>
+        <a name="gdaplot"></a>
 <!--   <div class="dropdown"> -->
   <div class="dropdown">
     {% block dropdown %}
 
 <!--     <label for="dropdownMenu1">Disease category:</label> -->
     <form method="post" action="index" > <!-- action must match your next URL -->
-    <label class="caption">Disease Category:&nbsp;</label>
+    <label class="caption" style="padding:0;">Disease Category:&nbsp;</label>
 <!--     <select class="form-control" id="dropdownMenu1" name="disId"> -->
     <select name="selection">
       {% for dis in dislist %}
@@ -134,8 +134,8 @@
       
       <p>&nbsp;</p>
       <h2 class="subheading">Data analysis</h2>
-      <p>The metrics constructed here are based on work done for the DisGeNet database. The weighted score described below represents a metric [0,1] that describes the quality of the established link between the identified gene and associated diseases. Each gene may influence several diseases and each disease may be influenced by several genes.</p>
-      <ul><b><i>Strength of association</b> = ( WUniProt + WCTDhuman + WClinVar ) + ( WRat + WMouse ) + ( WGAD + WLHGDN + WBeFree )</i></ul>
+      <p>The metrics constructed here are based on work done for the DisGeNet database. The weighted score described below represents a metric [0,1] that describes the quality of the established link between the identified gene and associated diseases.</p>
+      <ul><b><i>Strength of association</b> = ( WUniProt + WCTDhuman + WClinVar ) + ( WRat + WMouse ) + ( WGAD + WLHGDN + WBeFree ) + WHPO + WDISEASES</i></ul>
   	  <ul><b><i>Number of genes per disease</b> (fewer gene targets indicate more well-defined and easier to treat disease pathology)</i></ul>
       <p>For the <b>strength of association</b> calculation, each variable is either <i>0 or some positive value</i> based on whether that gene-disease association appears in the corresponding database. The first term in parentheses represents curated databases, the second term is predicted databases and the third term takes into account the number of publications where the link appears.</p>
       <p>The <a href="http://www.disgenet.org/web/DisGeNET/menu/dbinfo">DisGeNet About Page</a> has more detailed information.</p>

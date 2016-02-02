@@ -36,7 +36,7 @@ def index():  #remember the function name does not need to match the URL
     jump = ''
     sel = ''
     if request.method=='POST':
-        jump = '<script> window.location.hash="box"; </script>'
+        jump = '<script> window.location.hash="gdaplot"; </script>'
         sel = request.form['selection']
         if sel != 'all':
             dfall = dfall[dfall['category']==disease_dict[sel]]
