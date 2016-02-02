@@ -6,6 +6,7 @@
 <link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-0.10.0.min.js"></script>
+    {{ jumpscript | safe }}
     {{ script | safe }}
   </head>
 
@@ -40,13 +41,36 @@
 <!--       <li>Alternative laboratory-based drug discovery is very costly, time-consuming, and suffers from a low success rate.</li> -->
       <li>Gene-editing technologies such as <a href="https://en.wikipedia.org/wiki/CRISPR">CRISPR-Cas</a> currently show strong promise as an entirely new treatment approach. If a disease-causing gene can be identified, it may be possible to develop a gene therapy to treat the genetic source directly.</li>
       </ol>
-
+        
         <p>&nbsp;</p>
         </div>
         <div class="box">
 		<h2 class="caption">Therapeutic potential of gene-disease associations</h2>
 		<p><u><b>Quick interpretation:</b></u>&nbsp; the diseases with highest potential  are found toward the bottom and right-hand side of the chart. These regions correspond to a low number of genes per disease and strong association (or <b>score</b>) respectively.</p>
 		<p><u><b>Additional insights:</b></u>&nbsp; the <a href="#description">data collection, organization, and analysis</a></i> sections below contain additional information.</p>
+        <a name="box"></a>
+<!--   <div class="dropdown"> -->
+  <div class="dropdown">
+    {% block dropdown %}
+
+<!--     <label for="dropdownMenu1">Disease category:</label> -->
+    <form method="post" action="index" > <!-- action must match your next URL -->
+    <label class="caption">Disease Category:&nbsp;</label>
+<!--     <select class="form-control" id="dropdownMenu1" name="disId"> -->
+    <select name="selection">
+      {% for dis in dislist %}
+          {% if dis[0]==sel %}
+            <option value="{{ dis[0] }}" selected>{{ dis[1] }}</option>
+          {% else %}
+            <option value="{{ dis[0] }}">{{ dis[1] }}</option>
+          {% endif %}
+      {% endfor %}
+    </select>&nbsp;
+    <input type="submit" value="Display">
+    {% endblock dropdown %}
+  </div>
+
+
         <div class="bokeh">
         {{ div | safe }}
         </div>
