@@ -1,7 +1,7 @@
 diseaseName	Number of genes	geneSymbol	geneName	relurl	category	score_hpo	score_conf	score_dgn	score_total
 canavan disease	4	ASPA	aspartoacylase	/condition/canavan-disease	Brain and nervous system	0.0	3.7	0.8395529181628341	0.7641423345302674
 cleidocranial dysplasia	3	RUNX2	runt-related transcription factor 2	/condition/cleidocranial-dysplasia	Bones, muscles, and connective tissues	0.0	3.8	0.763477022224114	0.7057816177792912
-glycogen storage disease type iib	4	LAMP2	lysosomal-associated membrane protein 2	/condition/danon-disease	Bones, muscles, and connective tissues	0.0	0.0	0.741968536136738	0.5935748289093904
+glycogen storage disease type iib	4	LAMP2	lysosomal-associated membrane protein 2	/condition/danon-disease	Food, nutrition, and metabolism	0.0	0.0	0.741968536136738	0.5935748289093904
 primary hyperoxaluria type 1	4	AGXT	alanine-glyoxylate aminotransferase	/condition/primary-hyperoxaluria	Food, nutrition, and metabolism	0.0	0.0	0.738144292485995	0.590515433988796
 mucopolysaccharidosis vii	4	GUSB	glucuronidase, beta	/condition/mucopolysaccharidosis-type-vii	Bones, muscles, and connective tissues	0.0	0.0	0.734742237644871	0.5877937901158968
 biotinidase deficiency	4	BTD	biotinidase	/condition/biotinidase-deficiency	Brain and nervous system	0.0	3.6	0.733853862694847	0.6770830901558775
@@ -114,8 +114,8 @@ charcot-marie-tooth disease, type 2e	2	NEFL	neurofilament, light polypeptide	/co
 retinitis pigmentosa 12	1	CRB1	crumbs family member 1, photoreceptor morphogenesis associated	/condition/retinitis-pigmentosa	Eyes and vision	0.0	0.0	0.720567009140187	0.5764536073121497
 holoprosencephaly 2	1	SIX3	SIX homeobox 3	/condition/nonsyndromic-holoprosencephaly	Brain and nervous system	0.0	0.0	0.720567009140187	0.5764536073121497
 charcot-marie-tooth disease, type 4h	1	FGD4	FYVE, RhoGEF and PH domain containing 4	/condition/ankylosing-spondylitis	Mouth and teeth	0.0	0.0	0.720567009140187	0.5764536073121497
-lathosterolosis	3	SC5D	sterol-C5-desaturase			0.0	0.0	0.720567009140187	0.5764536073121497
-synpolydactyly 1	2	HOXD13	homeobox D13			0.0	0.0	0.720567009140187	0.5764536073121497
+lathosterolosis	3	SC5D	sterol-C5-desaturase		Food, nutrition, and metabolism	0.0	0.0	0.720567009140187	0.5764536073121497
+synpolydactyly 1	2	HOXD13	homeobox D13		Bones, muscles, and connective tissues	0.0	0.0	0.720567009140187	0.5764536073121497
 thyroid hormone resistance, generalized, autosomal dominant	1	THRB	thyroid hormone receptor, beta	/condition/isolated-growth-hormone-deficiency	Endocrine system (hormones)	0.0	0.0	0.720567009140187	0.5764536073121497
 immunodysregulation, polyendocrinopathy, and enteropathy, x-linked	3	FOXP3	forkhead box P3	/condition/autoimmune-polyglandular-syndrome-type-1	Immune system	0.0	0.0	0.720567009140187	0.5764536073121497
 bamforth syndrome	4	FOXE1	forkhead box E1	/condition/cytochrome-p450-oxidoreductase-deficiency	Heart and circulation	0.0	0.0	0.720567009140187	0.5764536073121497
@@ -128,10 +128,10 @@ epileptic encephalopathy, early infantile, 2	1	CDKL5	cyclin-dependent kinase-lik
 amaurosis congenita of leber, type 2	1	RPE65	retinal pigment epithelium-specific protein 65kDa	/condition/spondyloepimetaphyseal-dysplasia-strudwick-type	Endocrine system (hormones)	0.0	0.0	0.720283504570094	0.5762268036560753
 retinitis pigmentosa 11	1	PRPF31	pre-mRNA processing factor 31	/condition/retinitis-pigmentosa	Eyes and vision	0.0	0.0	0.720283504570094	0.5762268036560753
 retinitis pigmentosa 14	2	TULP1	tubby like protein 1	/condition/usher-syndrome	Eyes and vision	0.0	0.0	0.720283504570094	0.5762268036560753
-syndactyly cenani lenz type	2	LRP4	low density lipoprotein receptor-related protein 4			0.0	0.0	0.720283504570094	0.5762268036560753
+syndactyly cenani lenz type	2	LRP4	low density lipoprotein receptor-related protein 4		Bones, muscles, and connective tissues	0.0	0.0	0.720283504570094	0.5762268036560753
 multiple synostoses syndrome 2	2	GDF5	growth differentiation factor 5			0.0	0.0	0.720283504570094	0.5762268036560753
 exudative vitreoretinopathy, familial, x-linked recessive	1	NDP	Norrie disease (pseudoglioma)	/condition/wagner-syndrome	Eyes and vision	0.0	0.0	0.720283504570094	0.5762268036560753
-glycogen storage disease 0, liver	1	GYS2	glycogen synthase 2 (liver)	/condition/cystinosis	Bones, muscles, and connective tissues	0.0	0.0	0.720283504570094	0.5762268036560753
+glycogen storage disease 0, liver	1	GYS2	glycogen synthase 2 (liver)	/condition/cystinosis	Food, nutrition, and metabolism	0.0	0.0	0.720283504570094	0.5762268036560753
 muscular dystrophy, congenital, lmna-related	1	LMNA	lamin A/C	/condition/leukoencephalopathy-with-vanishing-white-matter	Bones, muscles, and connective tissues	0.0	0.0	0.720283504570094	0.5762268036560753
 metachromatic leukodystrophy due to saposin b deficiency	1	PSAP	prosaposin	/condition/pol-iii-related-leukodystrophy	Brain and nervous system	0.0	0.0	0.720283504570094	0.5762268036560753
 bartter syndrome, antenatal type 1	1	SLC12A1	solute carrier family 12 (sodium/potassium/chloride transporter), member 1	/condition/oculodentodigital-dysplasia	Digestive system	0.0	0.0	0.720283504570094	0.5762268036560753
@@ -201,7 +201,7 @@ epiphyseal dysplasia, multiple, 5	1	MATN3	matrilin 3	/condition/multiple-epiphys
 noonan syndrome 5	1	RAF1	Raf-1 proto-oncogene, serine/threonine kinase	/condition/pitt-hopkins-syndrome	Heart and circulation	0.0	0.0	0.72	0.5760000000000001
 ceroid lipofuscinosis, neuronal, 2	3	TPP1	tripeptidyl peptidase I	/condition/kufs-disease	Brain and nervous system	0.0	0.0	0.72	0.5760000000000001
 autism, susceptibility to, x-linked 1	1	NLGN3	neuroligin 3	/condition/16p112-duplication	Cancers	0.0	0.0	0.72	0.5760000000000001
-thyroid dyshormonogenesis 3	1	TG	thyroglobulin			0.0	0.0	0.72	0.5760000000000001
+thyroid dyshormonogenesis 3	1	TG	thyroglobulin		Endocrine system (hormones)	0.0	0.0	0.72	0.5760000000000001
 lissencephaly, x-linked, 2	1	ARX	aristaless related homeobox	/condition/x-linked-lissencephaly-with-abnormal-genitalia	Brain and nervous system	0.0	0.0	0.72	0.5760000000000001
 atrial septal defect 2	1	GATA4	GATA binding protein 4	/condition/oculofaciocardiodental-syndrome	Mouth and teeth	0.0	0.0	0.72	0.5760000000000001
 cornea plana 2	1	KERA	keratocan			0.0	0.0	0.72	0.5760000000000001
@@ -235,7 +235,7 @@ ceroid lipofuscinosis, neuronal, 6	2	CLN6	ceroid-lipofuscinosis, neuronal 6, lat
 parkinson disease 6, autosomal recessive early-onset	1	PINK1	PTEN induced putative kinase 1	/condition/danon-disease	Brain and nervous system	0.0	0.0	0.72	0.5760000000000001
 deafness, autosomal recessive 63	1	LRTOMT	leucine rich transmembrane and O-methyltransferase domain containing	/condition/chst3-related-skeletal-dysplasia	Ear, nose, and throat	0.0	0.0	0.72	0.5760000000000001
 muscular dystrophy, limb-girdle, type 1c	1	CAV3	caveolin 3	/condition/pol-iii-related-leukodystrophy	Bones, muscles, and connective tissues	0.0	0.0	0.72	0.5760000000000001
-thyroid dyshormonogenesis 6	1	DUOX2	dual oxidase 2			0.0	0.0	0.72	0.5760000000000001
+thyroid dyshormonogenesis 6	1	DUOX2	dual oxidase 2		Endocrine system (hormones)	0.0	0.0	0.72	0.5760000000000001
 epileptic encephalopathy, early infantile, 1	3	ARX	aristaless related homeobox	/condition/pol-iii-related-leukodystrophy	Reproductive system	0.0	0.0	0.72	0.5760000000000001
 muscular dystrophy, congenital, type 1d	1	LARGE	like-glycosyltransferase	/condition/berardinelli-seip-congenital-lipodystrophy	Bones, muscles, and connective tissues	0.0	0.0	0.72	0.5760000000000001
 cataract, pulverulent, juvenile-onset	1	MAF	v-maf avian musculoaponeurotic fibrosarcoma oncogene homolog		Eyes and vision	0.0	0.0	0.72	0.5760000000000001
@@ -249,7 +249,7 @@ brugada syndrome 7	1	SCN3B	sodium channel, voltage gated, type III beta subunit	
 hemophagocytic lymphohistiocytosis, familial, 2	4	PRF1	perforin 1 (pore forming protein)	/condition/familial-hemophagocytic-lymphohistiocytosis	Immune system	0.0	0.0	0.72	0.5760000000000001
 night blindness, congenital stationary, autosomal dominant 2	1	PDE6B	phosphodiesterase 6B, cGMP-specific, rod, beta	/condition/color-vision-deficiency	Eyes and vision	0.0	0.0	0.72	0.5760000000000001
 osteopetrosis, autosomal recessive 4	1	CLCN7	chloride channel, voltage-sensitive 7	/condition/troyer-syndrome	Bones, muscles, and connective tissues	0.0	0.0	0.72	0.5760000000000001
-glycogen storage disease, type ixd	1	PHKA1	phosphorylase kinase, alpha 1 (muscle)	/condition/glycogen-storage-disease-type-v	Bones, muscles, and connective tissues	0.0	0.0	0.72	0.5760000000000001
+glycogen storage disease, type ixd	1	PHKA1	phosphorylase kinase, alpha 1 (muscle)	/condition/glycogen-storage-disease-type-v	Food, nutrition, and metabolism	0.0	0.0	0.72	0.5760000000000001
 short qt syndrome 1	1	KCNH2	potassium channel, voltage gated eag related subfamily H, member 2	/condition/3-hydroxyacyl-coa-dehydrogenase-deficiency	Bones, muscles, and connective tissues	0.0	0.0	0.72	0.5760000000000001
 night blindness, congenital stationary, autosomal dominant 1	1	RHO	rhodopsin	/condition/x-linked-congenital-stationary-night-blindness	Eyes and vision	0.0	0.0	0.72	0.5760000000000001
 spastic paraplegia 13, autosomal dominant	1	HSPD1	heat shock 60kDa protein 1 (chaperonin)	/condition/l1-syndrome	Bones, muscles, and connective tissues	0.0	0.0	0.72	0.5760000000000001
@@ -264,7 +264,7 @@ mitochondrial dna depletion syndrome 2 (myopathic type)	2	TK2	thymidine kinase 2
 ceroid lipofuscinosis, neuronal, 10	1	CTSD	cathepsin D	/condition/kufs-disease	Brain and nervous system	0.0	0.0	0.72	0.5760000000000001
 holoprosencephaly 3	2	SHH	sonic hedgehog	/condition/nonsyndromic-holoprosencephaly	Brain and nervous system	0.0	0.0	0.72	0.5760000000000001
 granulomatous disease, chronic, autosomal recessive, cytochrome b-positive, type i	1	NCF1	neutrophil cytosolic factor 1	/condition/spinocerebellar-ataxia-type-3	Heart and circulation	0.0	0.0	0.72	0.5760000000000001
-sitosterolemia	2	ABCG5	ATP-binding cassette, sub-family G (WHITE), member 5	/condition/sitosterolemia	Blood/lymphatic system	0.0	0.0	0.72	0.5760000000000001
+sitosterolemia	2	ABCG5	ATP-binding cassette, sub-family G (WHITE), member 5	/condition/sitosterolemia	Food, nutrition, and metabolism	0.0	0.0	0.72	0.5760000000000001
 parkinson disease 1, autosomal dominant	1	SNCA	synuclein, alpha (non A4 component of amyloid precursor)	/condition/galactosemia	Food, nutrition, and metabolism	0.0	0.0	0.72	0.5760000000000001
 deafness, autosomal dominant 13	1	COL11A2	collagen, type XI, alpha 2	/condition/autosomal-recessive-cerebellar-ataxia-type-1	Ear, nose, and throat	0.0	0.0	0.72	0.5760000000000001
 cardiomyopathy, dilated, 1g	1	TTN	titin	/condition/familial-dilated-cardiomyopathy	Heart and circulation	0.0	0.0	0.72	0.5760000000000001
