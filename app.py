@@ -13,7 +13,10 @@ app = Flask(__name__)
 
 catclr = {'Ear, nose, and throat': '#aec7e8', 'Endocrine system (hormones)': '#e377c2', 'Lungs and breathing': '#c49c94', 'Heart and circulation': '#17becf', 'Reproductive system': '#f7b6d2', 'Eyes and vision': '#9467bd', 'Digestive system': '#ff9896', 'Bones, muscles, and connective tissues': '#ff7f0e', 'Skin, hair, and nails': '#d62728', 'Immune system': '#ffbb78', 'Food, nutrition, and metabolism': '#2ca02c', 'Cancers': '#8c564b', 'Mouth and teeth': '#98df8a', 'Kidneys and urinary system': '#c5b0d5', 'Not Available': '#eeeeee', 'Blood/lymphatic system': '#bcbd22', 'Brain and nervous system': '#1f77b4'}
 
-disease_dict = {'all': 'All', 'digest': 'Digestive system', 'cancer': 'Cancers', 'skin': 'Skin, hair, and nails', 'heart': 'Heart and circulation', 'bone': 'Bones, muscles, and connective tissues', 'lung': 'Lungs and breathing', 'endocrine': 'Endocrine system (hormones)', 'brain': 'Brain and nervous system', 'reproductive': 'Reproductive system', 'kidney': 'Kidneys and urinary system', 'immune': 'Immune system', 'mouth': 'Mouth and teeth', 'metabolism': 'Food, nutrition, and metabolism', 'ent': 'Ear, nose, and throat', 'blood': 'Blood/lymphatic system', 'mental': 'Mental health and behavior', 'eye': 'Eyes and vision'}
+disease_dict = {'all': 'All', 'digest': 'Digestive system', 'cancer': 'Cancers', 'skin': 'Skin, hair, and nails', 'heart': 'Heart and circulation', 'bone': 'Bones, muscles, and connective tissues', 'lung': 'Lungs and breathing', 'endocrine': 'Endocrine system (hormones)', 'brain': 'Brain and nervous system', 'reproductive': 'Reproductive system', 'kidney': 'Kidneys and urinary system', 'immune': 'Immune system', 'mouth': 'Mouth and teeth', 'metabolism': 'Food, nutrition, and metabolism', 'ent': 'Ear, nose, and throat', 'blood': 'Blood/lymphatic system', 'eye': 'Eyes and vision'}
+
+# disease_dict['mental'] = 'Mental health and behavior'
+
 dislist = sorted(disease_dict.items(), key=operator.itemgetter(1))
 
 @app.route('/')
@@ -94,8 +97,7 @@ def index():  #remember the function name does not need to match the URL
 
     t = os.path.getmtime('app.py')
     t = os.path.getmtime('../genediseaselink-web/app.py')
-    updated = '{modt:%B} {modt.day}, {modt:%Y}'.format( 
-    modt=datetime.date.fromtimestamp(t) )
+    updated = '{modt:%B} {modt.day}, {modt:%Y}'.format( modt=datetime.date.fromtimestamp(t) )
 
 #     updated = 'February 2, 2016'
 
