@@ -23,7 +23,7 @@
       </figure>
       <p class="intro"><a href="https://en.wikipedia.org/wiki/Drug_development">Drug development</a> is becoming increasingly costly and time-consuming.</p>
       <p class="intro">As of 2016, FDA-approved drugs <a href="http://csdd.tufts.edu/news/complete_story/pr_outlook_2016">average $2.6 billion and 15 years of development time</a>.</p> 
-    <p class="intro">A large percentage of effort is wasted on failed drugs. Candidates that make it out of the laboratory and into clinical trials have a <a href="http://www.nature.com/nbt/journal/v32/n1/abs/nbt.2786.html">very low success rate of around 10%</a>.</p>
+    <p class="intro">A large percentage of effort is wasted on failed drugs. Drug candidates that make it out of the laboratory and into clinical trials have a <a href="http://www.nature.com/nbt/journal/v32/n1/abs/nbt.2786.html">very low success rate</a> of around 10%.</p>
 
 <!--       <p>This data-centric approach is designed to help large and small pharmaceutical companies optimize the direction of their R&D efforts.</p> -->
 	  
@@ -70,6 +70,7 @@
         <li>Literature resources: <a href="http://geneticassociationdb.nih.gov/">Genetic Association Database</a>, <a href="http://www.dbs.ifi.lmu.de/~bundschu/LHGDN.html">Literature-derived Human Gene-Disease Network </a>, <a href="http://ibi.imim.es/befree/">BeFree</a>.</li>
         </ul>
       <li>The <a href="http://human-phenotype-ontology.github.io/">Human Phenotype Ontology</a> database contains human-only associations between genes and diseases organized by phenotype. It is designed not only to identify gene-disease associations but also demonstrate how these links can be put to use by the medical community.</li>
+      <li>The <a href="http://diseases.jensenlab.org/Search">DISEASES</a> database contains gene-disease associations extracted from biomedical research abstracts with text mining algorithms.</li>
       </ul>
       
       <p>&nbsp;</p>
@@ -98,6 +99,12 @@
       <td>SQL & TSV</td>
       <td>Query through sqlite3, ipython, and pandas</td>
       <td>>115000 GDAs</td>
+      </tr>
+      <tr>
+      <td>DISEASES</td>
+      <td>TSV</td>
+      <td>Download and load into pandas dataframe</td>
+      <td>>470000 GDAs</td>
       </tr>
       </table>
       

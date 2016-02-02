@@ -30,7 +30,7 @@ b               { font-weight: 400; }
                   font-weight: 600; }
 .subheading		{ font-family: 'Raleway'; color: #444; clear: both; font-weight: 500;
                   /* padding-top: 16px; */ }
-.caption		{ font-family: 'Raleway', sans-serif; font-weight: 500; 
+.caption		{ font-family: 'Raleway', sans-serif; font-weight: 500; padding-top: 16px;
                   text-align: center; color: #444; }
 .bokeh			{ border: 1px solid #777; padding: 24px; text-align: left; }
 .mpl			{ border: 1px solid #777; padding: 24px; text-align: center; 
