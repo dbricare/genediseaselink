@@ -96,7 +96,6 @@ def index():  #remember the function name does not need to match the URL
     script, div = components(p)
 
     t = os.path.getmtime('app.py')
-    t = os.path.getmtime('../genediseaselink-web/app.py')
     updated = '{modt:%B} {modt.day}, {modt:%Y}'.format( modt=datetime.date.fromtimestamp(t) )
 
 #     updated = 'February 2, 2016'
