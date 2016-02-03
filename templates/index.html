@@ -29,10 +29,12 @@
 <!--       <p>This data-centric approach is designed to help large and small pharmaceutical companies optimize the direction of their R&D efforts.</p> -->
 	  
 <!--       <h2 class="subheading">Gene-disease association and </h2> -->
-          <p class="intro">Fortunately, <a href="http://www.nature.com/ng/journal/v47/n8/full/ng.3314.html">the strength of association between a particular gene and medical condition can help determine the probability of generating a successful therapy</a>.</p>
+          <p class="intro">Fortunately, <a href="http://www.nature.com/ng/journal/v47/n8/full/ng.3314.html">the strength of association</a> between a particular gene and medical condition can help determine the probability of generating a successful therapy.</p>
           <p class="intro">Knowing which therapies are likely to succeed before beginning drug development can help reduce costs and development time.</p>
 <!--       <p>If the gene-disease link is strong, a therapy that targets the associated gene is  likely to successfully treat the disease.</p> -->
 <!--       <p>Strength of association is determined by the amount and quality of data from computational and laboratory investigations of a specific gene-disease pair.</p> -->
+      <p>&nbsp;</p>
+      <h2 class="subheading">Advantages</h2>
       <p class="intro"><b>Measuring the strength of gene-disease associations (GDAs) has several additional benefits:</b></p>  
 
       <ol>
@@ -43,10 +45,11 @@
       </ol>
         
         <p>&nbsp;</p>
+        <p>&nbsp;</p>
         </div>
         <div class="box">
 		<h2 class="caption">Therapeutic potential of gene-disease associations</h2>
-		<p><u><b>Quick interpretation:</b></u>&nbsp; the diseases with highest potential  are found toward the bottom and right-hand side of the chart. These regions correspond to a low number of genes per disease and strong association (or <b>score</b>) respectively.</p>
+		<p><u><b>Quick interpretation:</b></u>&nbsp; diseases with the highest potential  are found toward the bottom and right-hand side of the chart. These regions correspond to a low number of genes per disease and strong association (or <b>score</b>) respectively.</p>
 		<p><u><b>Additional insights:</b></u>&nbsp; the <a href="#description">data collection, organization, and analysis</a></i> sections below contain additional information.</p>
         <a name="gdaplot"></a>
 <!--   <div class="dropdown"> -->
@@ -83,7 +86,7 @@
     <div class="page-primary">
     <p>&nbsp;</p>        
 	  <h2 class="subheading" id="description">Data collection</h2>
-      <p>Data is contributed primarily by academic researchers who share their results through a variety of public databases.</p>
+      <p>Data is sourced primarily from academic researchers who share their results through a variety of public databases.</p>
 
       <ul>
       <li>A list of around 10,000 established genetic conditions is available from the <a href="http://ghr.nlm.nih.gov/">NIH Genetics Home Reference</a>.</li>
@@ -134,18 +137,20 @@
       
       <p>&nbsp;</p>
       <h2 class="subheading">Data analysis</h2>
-      <p>The metrics constructed here are based on work done for the DisGeNet database. The weighted score described below represents a metric [0,1] that describes the quality of the established link between the identified gene and associated diseases.</p>
+          <figure class="figgda" >
+        <figcaption class="fcap">Distribution of GDA scores</figcaption>
+        <img src="static/fullhist.png" width="100%">
+    </figure>
+      <p>The weighted score represents a metric [0,1] that describes the quality of the established link between the identified gene and associated diseases.</p>
       <ul><b><i>Strength of association</b> = ( WUniProt + WCTDhuman + WClinVar ) + ( WRat + WMouse ) + ( WGAD + WLHGDN + WBeFree ) + WHPO + WDISEASES</i></ul>
   	  <ul><b><i>Number of genes per disease</b> (fewer gene targets indicate more well-defined and easier to treat disease pathology)</i></ul>
-      <p>For the <b>strength of association</b> calculation, each variable is either <i>0 or some positive value</i> based on whether that gene-disease association appears in the corresponding database. The first term in parentheses represents curated databases, the second term is predicted databases and the third term takes into account the number of publications where the link appears.</p>
-      <p>The <a href="http://www.disgenet.org/web/DisGeNET/menu/dbinfo">DisGeNet About Page</a> has more detailed information.</p>
-
-
+      <p>For the <b>strength of association</b> calculation, each variable is either <i>0 or some positive value</i> based on whether that gene-disease association appears in the corresponding database.</p>
+      <p>The <a href="http://www.disgenet.org/web/DisGeNET/menu/dbinfo">DisGeNet About Page</a> has additional information.</p>
+      
+    
       <p>&nbsp;</p>
       <h2 class="subheading">Future work</h2>
-      <p>Updates planned:</p>
-      <ul><li>An outlier detection model to objectively determine gene-disease associations with the greatest potential for therapeutic success.</li>
-      <li>More interactions to sort and select GDA categories from Bokeh plot.</li></ul>
+      <ul><li>Plan to add an adjustable outlier detection model to objectively determine gene-disease associations with the greatest potential for therapeutic success.</li></ul>
     
         <p>&nbsp;</p>
         </div>

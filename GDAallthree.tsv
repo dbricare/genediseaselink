@@ -1,0 +1,103 @@
+diseaseName	Number of genes	geneSymbol	score	score_hpo	score_conf	score_total	parse	category
+enlarged vestibular aqueduct	8	SLC26A4	0.737342809734312	1.0	3.8	0.7848742477874495	enlarged vestibular	Ear, nose, and throat
+aspartylglucosaminuria	8	AGA	0.7304896690934659	1.0	4.0	0.7843917352747727	aspartylglucosaminuria	Brain and nervous system
+mucopolysaccharidosis vi	6	ARSB	0.8372358506434859	0.0	4.0	0.7697886805147888	mucopolysaccharidosis vi	Bones, muscles, and connective tissues
+canavan disease	4	ASPA	0.8395529181628341	0.0	3.7	0.7641423345302674	canavan disease	Brain and nervous system
+cleidocranial dysplasia	3	RUNX2	0.763477022224114	0.0	3.8	0.7057816177792912	cleidocranial dysplasia	Bones, muscles, and connective tissues
+craniofacial dysostosis	9	FGFR2	0.7338627598684759	1.0	0.0	0.6870902078947807	craniofacial dysostosis	Bones, muscles, and connective tissues
+alkaptonuria	1	HGD	0.7338337958023621	0.0	4.0	0.6870670366418896	alkaptonuria	Bones, muscles, and connective tissues
+focal dermal hypoplasia	2	PORCN	0.732670813455874	0.0	4.0	0.6861366507646992	focal dermal	Bones, muscles, and connective tissues
+pleuropulmonary blastoma	5	DICER1	0.6245360731214991	1.0	3.4	0.6846288584971992	pleuropulmonary blastoma	Cancers
+birt-hogg-dube syndrome	5	FLCN	0.72850513710281	0.0	4.0	0.6828041096822479	birt hogg	Cancers
+allan-herndon-dudley syndrome	2	SLC16A2	0.724819577691592	0.0	4.0	0.6798556621532736	allan herndon	Brain and nervous system
+ellis-van creveld syndrome	5	EVC	0.7239400999151979	0.0	4.0	0.6791520799321583	ellis van	Bones, muscles, and connective tissues
+alpha-mannosidosis	1	MAN2B1	0.723685559411218	0.0	4.0	0.6789484475289744	alpha mannosidosis	Food, nutrition, and metabolism
+hyperprolinemia	4	PRODH	0.7231185502710301	1.0	0.0	0.6784948402168239	hyperprolinemia	Food, nutrition, and metabolism
+succinic semialdehyde dehydrogenase deficiency	3	ALDH5A1	0.7219845319906558	0.0	4.0	0.6775876255925246	succinic semialdehyde	Brain and nervous system
+biotinidase deficiency	4	BTD	0.733853862694847	0.0	3.6	0.6770830901558775	biotinidase deficiency	Brain and nervous system
+acrodermatitis enteropathica	8	SLC39A4	0.7242525685514051	0.0	3.9	0.6769020548411241	acrodermatitis enteropathica	Skin, hair, and nails
+guanidinoacetate methyltransferase deficiency	2	GAMT	0.720567009140187	0.0	4.0	0.6764536073121497	guanidinoacetate methyltransferase	Brain and nervous system
+erythrokeratodermia variabilis	5	GJB3	0.7245360731214989	0.0	3.8	0.6746288584971991	erythrokeratodermia variabilis	Skin, hair, and nails
+familial encephalopathy with neuroserpin inclusion bodies	5	SERPINI1	0.721134018280375	0.0	3.9	0.6744072146243001	familial encephalopathy	Brain and nervous system
+timothy syndrome	9	CACNA1C	0.7245360731214989	0.0	3.7	0.6721288584971992	timothy syndrome	Bones, muscles, and connective tissues
+ornithine carbamoyltransferase deficiency disease	9	OTC	0.8387313685186669	0.0	0.0	0.6709850948149336	ornithine carbamoyltransferase	Food, nutrition, and metabolism
+kleefstra syndrome	1	EHMT1	0.722268036560749	0.0	3.7	0.6703144292485993	kleefstra syndrome	Brain and nervous system
+citrullinemia	8	ASS1	0.7338627598684759	0.0	3.3	0.6695902078947807	citrullinemia	Kidneys and urinary system
+bestrophinopathy	1	BEST1	0.723685559411218	0.0	3.6	0.6689484475289744	bestrophinopathy	Eyes and vision
+acromesomelic dysplasia, maroteaux type	5	NPR2	0.721134018280375	0.0	3.6	0.6669072146243	acromesomelic dysplasia	Bones, muscles, and connective tissues
+arterial calcification of infancy	2	ENPP1	0.7219845319906558	0.0	3.5	0.6650876255925247	arterial calcification	Heart and circulation
+purine nucleoside phosphorylase deficiency	3	PNP	0.721134018280375	0.0	3.5	0.6644072146243001	purine nucleoside	Immune system
+popliteal pterygium syndrome	2	IRF6	0.7231185502710301	0.0	3.3	0.6609948402168241	popliteal pterygium	Bones, muscles, and connective tissues
+pelger-huet anomaly	5	LBR	0.7250741181955721	0.0	3.2	0.6600592945564576	pelger huet	Blood/lymphatic system
+hyperargininemia	6	ARG1	0.723402054841124	0.0	3.1	0.6562216438728992	hyperargininemia	Food, nutrition, and metabolism
+argininosuccinic aciduria	3	ASL	0.722835045700937	0.0	3.1	0.6557680365607497	argininosuccinic aciduria	Food, nutrition, and metabolism
+jervell-lange nielsen syndrome	6	KCNQ1	0.743718594515898	0.0	2.4	0.6549748756127183	jervell lange	Ear, nose, and throat
+pilomatrixoma	5	CTNNB1	0.621701027420562	1.0	2.3	0.6548608219364496	pilomatrixoma	Skin, hair, and nails
+fibular hypoplasia and complex brachydactyly	1	GDF5	0.720567009140187	0.0	2.9	0.6489536073121497	fibular hypoplasia	Bones, muscles, and connective tissues
+acrocallosal syndrome	5	KIF7	0.721134018280375	0.0	2.7	0.6444072146243001	acrocallosal syndrome	
+peroxisomal acyl-coa oxidase deficiency	1	ACOX1	0.720567009140187	0.0	2.4	0.6364536073121496	peroxisomal acyl	Brain and nervous system
+fructose intolerance	3	ALDOB	0.6338248986287329	1.0	0.0	0.6070599189029864	fructose intolerance	Food, nutrition, and metabolism
+factor vii deficiency	7	F7	0.639934484650124	0.0	3.7	0.6044475877200993	factor vii	Blood/lymphatic system
+trimethylaminuria	4	FMO3	0.627087614252342	1.0	0.0	0.6016700914018737	trimethylaminuria	Food, nutrition, and metabolism
+factor xi deficiency	6	F11	0.645127220192737	0.0	3.4	0.6011017761541896	factor xi	Blood/lymphatic system
+darier disease	9	ATP2A2	0.7504068479336908	0.0	0.0	0.6003254783469527	darier disease	Skin, hair, and nails
+x-linked sideroblastic anemia	9	ALAS2	0.6287886416729039	0.0	3.8	0.5980309133383231	x linked	Blood/lymphatic system
+hypochondroplasia	9	FGFR3	0.635025742214965	0.0	3.6	0.598020593771972	hypochondroplasia	Bones, muscles, and connective tissues
+ellis-van creveld syndrome	5	EVC2	0.627880199830395	0.0	3.8	0.5973041598643161	ellis van	Bones, muscles, and connective tissues
+steatocystoma multiplex	3	KRT17	0.620850513710281	1.0	0.0	0.5966804109682248	steatocystoma multiplex	Skin, hair, and nails
+glutathione synthetase deficiency	2	GSS	0.620283504570094	1.0	0.0	0.5962268036560752	glutathione synthetase	Blood/lymphatic system
+globozoospermia	2	SPATA16	0.62	1.0	0.0	0.596	globozoospermia	Reproductive system
+occult macular dystrophy	2	RP1L1	0.622551541130843	0.0	3.9	0.5955412329046744	occult macular	Eyes and vision
+pulmonary alveolar microlithiasis	2	SLC34A2	0.621701027420562	0.0	3.9	0.5948608219364496	pulmonary alveolar	Lungs and breathing
+factor v deficiency	8	F5	0.6402870870713001	0.0	3.3	0.5947296696570401	factor v	Blood/lymphatic system
+monilethrix	6	KRT86	0.624252568551405	0.0	3.8	0.5944020548411241	monilethrix	Skin, hair, and nails
+leukodystrophy, globoid cell	9	GALC	0.7427004324999781	0.0	0.0	0.5941603459999825	leukodystrophy  globoid	Blood/lymphatic system
+glycogen storage disease type iib	4	LAMP2	0.741968536136738	0.0	0.0	0.5935748289093904	glycogen storage	Food, nutrition, and metabolism
+factor xii deficiency	2	F12	0.628574234953893	0.0	3.6	0.5928593879631143	factor xii	Blood/lymphatic system
+brown-vialetto-van laere syndrome	4	SLC52A3	0.622268036560749	0.0	3.8	0.5928144292485993	brown vialetto	Bones, muscles, and connective tissues
+arterial tortuosity syndrome	5	SLC2A10	0.621417522850468	0.0	3.8	0.5921340182803745	arterial tortuosity	Bones, muscles, and connective tissues
+medium chain acyl coa dehydrogenase deficiency	5	ACADM	0.739288991947865	0.0	0.0	0.591431193558292	medium chain	Food, nutrition, and metabolism
+chylomicron retention disease	9	SAR1B	0.62311855027103	0.0	3.7	0.5909948402168239	chylomicron retention	Digestive system
+primary hyperoxaluria type 1	4	AGXT	0.738144292485995	0.0	0.0	0.590515433988796	primary hyperoxaluria	Food, nutrition, and metabolism
+parietal foramina	5	MSX2	0.5219845319906561	1.0	2.9	0.5900876255925249	parietal foramina	Bones, muscles, and connective tissues
+sclerosteosis	5	SOST	0.6236855594112181	0.0	3.6	0.5889484475289745	sclerosteosis	Bones, muscles, and connective tissues
+roberts syndrome	7	ESCO2	0.6234020548411241	0.0	3.6	0.5887216438728993	roberts syndrome	
+mucopolysaccharidosis vii	4	GUSB	0.734742237644871	0.0	0.0	0.5877937901158968	mucopolysaccharidosis vii	Bones, muscles, and connective tissues
+porphyria, erythropoietic	6	UROS	0.734713273578757	0.0	0.0	0.5877706188630056	porphyria  erythropoietic	Blood/lymphatic system
+erythrokeratodermia variabilis	5	GJB4	0.6219845319906561	0.0	3.6	0.5875876255925249	erythrokeratodermia variabilis	Skin, hair, and nails
+sjogren-larsson syndrome	4	ALDH3A2	0.652752879519152	0.0	2.6	0.5872023036153216	sjogren larsson	
+myh9-related disorders	7	MYH9	0.7338917239345899	0.0	0.0	0.5871133791476719	myh9 related	Blood/lymphatic system
+limb-girdle muscular dystrophy type 2a	9	CAPN3	0.733608219364496	0.0	0.0	0.5868865754915968	limb girdle	Bones, muscles, and connective tissues
+oculocutaneous albinism type 1	3	TYR	0.733324714794402	0.0	0.0	0.5866597718355216	oculocutaneous albinism	Eyes and vision
+charcot-marie-tooth disease, x-linked, 1	7	GJB1	0.7330412102243091	0.0	0.0	0.5864329681794473	charcot marie	Bones, muscles, and connective tissues
+arts syndrome	1	PRPS1	0.620283504570094	0.0	3.6	0.5862268036560752	arts syndrome	Brain and nervous system
+glycogen storage disease type iv	5	GBE1	0.7324162729518942	0.0	0.0	0.5859330183615153	glycogen storage	Food, nutrition, and metabolism
+limb-girdle muscular dystrophy, type 2b	7	DYSF	0.7316236873738399	0.0	0.0	0.5852989498990719	limb girdle	Bones, muscles, and connective tissues
+fucosidosis	1	FUCA1	0.621417522850468	0.0	3.5	0.5846340182803744	fucosidosis	Brain and nervous system
+frasier syndrome	7	WT1	0.627625659326415	0.0	3.3	0.5846005274611321	frasier syndrome	Kidneys and urinary system
+norrie disease	9	NDP	0.730587731010662	0.0	0.0	0.5844701848085296	norrie disease	Eyes and vision
+congenital contractural arachnodactyly	3	FBN2	0.7305387000520641	0.0	0.0	0.5844309600416513	congenital contractural	Bones, muscles, and connective tissues
+mulibrey nanism	5	TRIM37	0.633492363100041	0.0	3.1	0.5842938904800328	mulibrey nanism	
+holocarboxylase synthetase deficiency	3	HLCS	0.620283504570094	0.0	3.5	0.5837268036560752	holocarboxylase synthetase	Brain and nervous system
+hypophosphatemic rickets, autosomal dominant	5	FGF23	0.729639155383185	0.0	0.0	0.5837113243065479	hypophosphatemic rickets	Bones, muscles, and connective tissues
+papillorenal syndrome	2	PAX2	0.729355650813091	0.0	0.0	0.5834845206504727	papillorenal syndrome	Eyes and vision
+paralysis, hyperkalemic periodic	3	SCN4A	0.7293266867469771	0.0	0.0	0.5834613493975817	paralysis  hyperkalemic	Bones, muscles, and connective tissues
+kniest dysplasia	4	COL2A1	0.622835045700937	0.0	3.4	0.5832680365607495	kniest dysplasia	Bones, muscles, and connective tissues
+inclusion body myopathy with early-onset paget disease and frontotemporal dementia	7	VCP	0.728788641672904	0.0	0.0	0.5830309133383232	inclusion body	Bones, muscles, and connective tissues
+juvenile gout	5	UMOD	0.728788641672904	0.0	0.0	0.5830309133383232	juvenile gout	Bones, muscles, and connective tissues
+ulnar-mammary syndrome	4	TBX3	0.72850513710281	0.0	0.0	0.5828041096822479	ulnar mammary	Reproductive system
+blepharophimosis, ptosis, and epicanthus inversus	3	FOXL2	0.728270663491315	0.0	0.0	0.582616530793052	blepharophimosis  ptosis	Eyes and vision
+reticular dysgenesis	4	AK2	0.621134018280375	0.0	3.4	0.5819072146243001	reticular dysgenesis	Bones, muscles, and connective tissues
+mowat-wilson syndrome	9	ZEB2	0.727371118822435	0.0	0.0	0.5818968950579481	mowat wilson	Brain and nervous system
+histidinemia	2	HAL	0.620850513710281	0.0	3.4	0.5816804109682248	histidinemia	Food, nutrition, and metabolism
+boomerang dysplasia	2	FLNB	0.620850513710281	0.0	3.4	0.5816804109682248	boomerang dysplasia	Bones, muscles, and connective tissues
+autosomal dominant lateral temporal lobe epilepsy	4	LGI1	0.727087614252342	0.0	0.0	0.5816700914018736	autosomal dominant	Brain and nervous system
+hay-wells syndrome	9	TP63	0.727087614252342	0.0	0.0	0.5816700914018736	hay wells	Bones, muscles, and connective tissues
+familial cold urticaria	8	NLRP3	0.727087614252342	0.0	0.0	0.5816700914018736	familial cold	Bones, muscles, and connective tissues
+neuraminidase deficiency with beta-galactosidase deficiency	8	CTSA	0.726520605112154	0.0	0.0	0.5812164840897233	neuraminidase deficiency	Food, nutrition, and metabolism
+enhanced s-cone syndrome	5	NR2E3	0.7262371005420609	0.0	0.0	0.5809896804336487	enhanced s	
+barakat syndrome	6	GATA3	0.725953595971967	0.0	0.0	0.5807628767775735	barakat syndrome	
+triglyceride storage disease with impaired long-chain fatty acid oxidation	3	ABHD5	0.725953595971967	0.0	0.0	0.5807628767775735	triglyceride storage	Bones, muscles, and connective tissues
+wolcott-rallison syndrome	8	EIF2AK3	0.725953595971967	0.0	0.0	0.5807628767775735	wolcott rallison	
+masa (mental retardation, aphasia, shuffling gait, adducted thumbs) syndrome	7	L1CAM	0.7256700914018729	0.0	0.0	0.5805360731214984	masa  mental	Mental health and behavior
+vitamin d hydroxylation-deficient rickets, type 1a	2	CYP27B1	0.7251030822616858	0.0	0.0	0.5800824658093487	vitamin d	Food, nutrition, and metabolism
