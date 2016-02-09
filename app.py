@@ -11,7 +11,7 @@ from bokeh.embed import components, autoload_static
 app = Flask(__name__)
 
 
-catclr = {'Digestive system': '#17becf', 'Brain and nervous system': '#d62728', 'Blood/lymphatic system': '#ffbb78', 'Reproductive system': '#e377c2', 'Not Available': '#eeeeee', 'Mouth and teeth': '#98df8a', 'Eyes and vision': '#7f7f7f', 'Kidneys and urinary system': '#1f77b4', 'Ear, nose, and throat': '#aec7e8', 'Bones, muscles, and connective tissues': '#ff7f0e', 'Lungs and breathing': '#bcbd22', 'Food, nutrition, and metabolism': '#2ca02c', 'Skin, hair, and nails': '#9467bd'}
+catclr = {'Kidneys and urinary system': '#7f7f7f', 'Food, nutrition, and metabolism': '#e377c2', 'Digestive system': '#d62728', 'Not Available': '#eeeeee', 'Brain and nervous system': '#2ca02c', 'Mouth and teeth': '#17becf', 'Reproductive system': '#ffbb78', 'Lungs and breathing': '#bcbd22', 'Bones, muscles, and connective tissues': '#ff7f0e', 'Blood/lymphatic system': '#1f77b4', 'Eyes and vision': '#8c564b', 'Ear, nose, and throat': '#9467bd', 'Skin, hair, and nails': '#98df8a'}
 
 disease_dict = {'immune': 'Immune system', 'mouth': 'Mouth and teeth', 
                 'kidney': 'Kidneys and urinary system', 
@@ -63,7 +63,6 @@ def index():  #remember the function name does not need to match the URL
     selatype = ''
     errmsg = ''
     selperc = '00'
-#     cirrad = 0
     if request.method=='POST':
         jump = '<script> window.location.hash="gdaplot"; </script>'
         selcat = request.form['selectioncat']
@@ -85,10 +84,6 @@ def index():  #remember the function name does not need to match the URL
     yy = dfall['count_total']
     xx = dfall['score_total']
 
-    # Scatter points for better readability
-#     np.random.seed(1)
-#     rndm = (np.random.random(yy.shape) - 0.5) * 0.8
-
 
     # Generate plot
     output_file("templates/index.html")
@@ -108,16 +103,16 @@ def index():  #remember the function name does not need to match the URL
     )
 
     hover = HoverTool(tooltips=[("Disease", "@desc"), ("Category", "@cat"), 
-    ("Gene", "@desc2"), ("Type", "@assoc"), ("Strength", "@x{0.000}"), ("Frequency", 
+    ("Gene", "@desc2"), ("Type", "@assoc"), ("Association", "@x{0.000}"), ("Specificity", 
     "@y{0.000}")], names=['pts'])
 
 
 
     p = figure(plot_width=900, plot_height=600, tools=['box_zoom','pan','reset',
-    'save',hover], x_range=[0,0.8], y_range=[0,0.8])
+    'save',hover], x_range=[0,0.8], y_range=[0,0.8], title='Gene-disease association surpassing high-scoring threshold')
     p.title_text_font = 'Source Sans Pro'
-    p.xaxis.axis_label = 'Strength of Association'
-    p.yaxis.axis_label = 'Gene and Disease Frequency'
+    p.xaxis.axis_label = 'Association Score'
+    p.yaxis.axis_label = 'Specificity Score'
     p.xaxis.axis_label_text_font = 'Source Sans Pro'
     p.yaxis.axis_label_text_font = 'Source Sans Pro'
 
@@ -141,11 +136,6 @@ def index():  #remember the function name does not need to match the URL
     updated='{modt:%B} {modt.day}, {modt:%Y}'.format(modt=datetime.date.fromtimestamp(t))
 
 #     updated = 'February 2, 2016'
-
-#     if request.method=='POST':
-#         return render_template(url_for('index',_anchor='box'), script=script, div=div, 
-#         dislist = dislist, updated=updated)
-#     else:
 
 
     return render_template('index.html', script=script, div=div, catlist=catlist, atypelist=atypelist, selcat=selcat, selatype=selatype, perclist=perclist, selperc=selperc, updated=updated, jumpscript=jump, errmsg = errmsg)        

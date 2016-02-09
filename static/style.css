@@ -14,9 +14,9 @@ b               { font-weight: 400; }
                   margin: 0 auto; width: 92%; 
                   clear: both; }
 .header			{ border-bottom: 1px solid #ccc; /*height: 150px;*/ }
-.headertop		{ font-size: 2.4em; padding: 20px 10px 12px 10px; color: #fff; background-color: #1f77b4; margin: 0;  border-bottom: 
+.headertop		{ font-size: 2em; padding: 20px 10px 12px 10px; color: #fff; background-color: #1f77b4; margin: 0;  border-bottom: 
                   2px solid #ccc; font-weight: 600; }
-.headerbtm		{ font-size: 1.4em; padding: 12px 10px 20px 10px; color: #fff; margin: 0; 
+.headerbtm		{ font-size: 1.2em; padding: 12px 10px 20px 10px; color: #fff; margin: 0; 
                   background-color: #1f77b4; }
 .page           { border: 0px solid #fff; padding: 0px; background: white; }
 .page-primary	{ padding: 0px; border: 0px solid #000; width: 90%; margin: auto; }
