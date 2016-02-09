@@ -11,13 +11,34 @@ from bokeh.embed import components, autoload_static
 app = Flask(__name__)
 
 
-catclr = {'Not Available': '#eeeeee', 'Ear, nose, and throat': '#1f77b4', 'Lungs and breathing': '#ff9896', 'Blood/lymphatic system': '#aec7e8', 'Brain and nervous system': '#ff7f0e', 'Immune system': '#17becf', 'Mental health and behavior': '#c49c94', 'Heart and circulation': '#bcbd22', 'Kidneys and urinary system': '#e377c2', 'Food, nutrition, and metabolism': '#9467bd', 'Cancers': '#d62728', 'Eyes and vision': '#7f7f7f', 'Bones, muscles, and connective tissues': '#2ca02c', 'Reproductive system': '#98df8a', 'Digestive system': '#c5b0d5', 'Skin, hair, and nails': '#8c564b'}
+catclr = {'Brain and nervous system': '#9467bd', 'Eyes and vision': '#7f7f7f', 
+          'Digestive system': '#aec7e8', 'Blood/lymphatic system': '#17becf', 
+          'Mouth and teeth': '#98df8a', 'Cancers': '#ff9896', 
+          'Lungs and breathing': '#bcbd22', 
+          'Ear, nose, and throat': '#ffbb78', 'Kidneys and urinary system': '#1f77b4', 
+          'Food, nutrition, and metabolism': '#2ca02c', 
+          'Bones, muscles, and connective tissues': '#ff7f0e', 
+          'Reproductive system': '#e377c2', 'Not Available': '#eeeeee', 
+          'Skin, hair, and nails': '#d62728'}
 
-disease_dict = {'all': 'All', 'digest': 'Digestive system', 'cancer': 'Cancers', 'skin': 'Skin, hair, and nails', 'heart': 'Heart and circulation', 'bone': 'Bones, muscles, and connective tissues', 'lung': 'Lungs and breathing', 'endocrine': 'Endocrine system (hormones)', 'brain': 'Brain and nervous system', 'reproductive': 'Reproductive system', 'kidney': 'Kidneys and urinary system', 'immune': 'Immune system', 'mouth': 'Mouth and teeth', 'metabolism': 'Food, nutrition, and metabolism', 'ent': 'Ear, nose, and throat', 'blood': 'Blood/lymphatic system', 'eye': 'Eyes and vision'}
-
-disease_dict['mental'] = 'Mental health and behavior'
-
-dislist = sorted(disease_dict.items(), key=operator.itemgetter(1))
+disease_dict = {'immune': 'Immune system', 'mouth': 'Mouth and teeth', 
+                'kidney': 'Kidneys and urinary system', 
+                'reproductive': 'Reproductive system', 
+                'metabolism': 'Food, nutrition, and metabolism', 
+                'digest': 'Digestive system', 'blood': 'Blood/lymphatic system', 
+                'bone': 'Bones, muscles, and connective tissues', 
+                'ent': 'Ear, nose, and throat', 'not': "Not Available",
+                'endocrine': 'Endocrine system (hormones)', 'all': 'All', 
+                'eye': 'Eyes and vision', 'cancer': 'Cancers', 'skin': 
+                'Skin, hair, and nails', 'heart': 'Heart and circulation', 
+                'mental': 'Mental health and behavior', 
+                'brain': 'Brain and nervous system', 'lung': 'Lungs and breathing'}
+                
+atype_dict = {'all': 'All', 'genetic': 'GeneticVariation', 
+              'altered': 'AlteredExpression'}
+              
+perc_dict = {'00': 'Not Selected', '01': 'Top 1%', '05': 'Top 5%', 
+             '10': 'Top 10%', '15': 'Top 15%', '20': 'Top 20%', '25': 'Top 25%'}
 
 @app.route('/')
 def main():
@@ -27,27 +48,54 @@ def main():
 @app.route('/index', methods=['GET', 'POST'])
 def index():  #remember the function name does not need to match the URL
 
+
     # Load plot data
 #     dfall = pd.read_csv('GeneDiseaseMoreCats.csv')
 #     dfall = pd.read_csv('ThreeGDA.tsv',sep='\t')
-    dfall = pd.read_csv('GDAallthree.tsv',sep='\t')
+    dfall = pd.read_csv('GDAallthreehigh.tsv', sep='\t')
     dfall.fillna(value='Not Available', inplace=True)
+    dfstash = dfall.copy()
     
+    # create pull-down menu list
+    catdict = {k: v for k, v in disease_dict.items() 
+               if (v in dfall.category.unique()) or (k in 'all') or (k in 'not')}
+    catlist = sorted(catdict.items(), key=operator.itemgetter(1))
+    atypedict = {k: v for k, v in atype_dict.items() 
+               if (v in dfall.associationType.unique()) or (k in 'all') or (k in 'not')}
+    atypelist = sorted(atypedict.items(), key=operator.itemgetter(1))
+    perclist = sorted(perc_dict.items(), key=operator.itemgetter(0))
+        
     # return user-selected data
     jump = ''
-    sel = ''
+    selcat = ''
+    selatype = ''
+    errmsg = ''
+    selperc = '00'
+#     cirrad = 0
     if request.method=='POST':
         jump = '<script> window.location.hash="gdaplot"; </script>'
-        sel = request.form['selection']
-        if sel != 'all':
-            dfall = dfall[dfall['category']==disease_dict[sel]]
+        selcat = request.form['selectioncat']
+        selatype = request.form['selectiontype']
+        selperc = request.form['selectioncir']
+        cirrad = np.percentile(dfall['ideal'],int(selperc))
+        if selcat != 'all':
+            dfall = dfall[dfall['category']==disease_dict[selcat]]
+        if selatype != 'all':
+            dfall = dfall[dfall['associationType']==atype_dict[selatype]]
+#         if selperc != '00':
+        if len(dfall)==0:
+            dfall = dfstash.copy()
+            selcat='all'
+            selatype='all'
+            errmsg='No matching gene-disease associations found.'
+      
     
-    yy = dfall['Number of genes']
+    yy = dfall['count_total']
     xx = dfall['score_total']
 
     # Scatter points for better readability
-    np.random.seed(1)
-    rndm = (np.random.random(yy.shape) - 0.5) * 0.8
+#     np.random.seed(1)
+#     rndm = (np.random.random(yy.shape) - 0.5) * 0.8
 
 
     # Generate plot
@@ -56,35 +104,49 @@ def index():  #remember the function name does not need to match the URL
     dfall['color'] = dfall['category'].map(lambda x: catclr[x])
 
     source = ColumnDataSource(
-    data=dict(
-    x=xx,
-    y=yy+rndm,
-    genes=yy,
-    desc=dfall['diseaseName'],
-    cat=dfall['category']
+        data=dict(
+            x=xx,
+            y=yy,
+            genes=dfall['geneCount'],
+            desc=dfall['diseaseName'],
+            desc2=dfall['geneSymbol'],
+            cat=dfall['category'],
+            assoc=dfall['associationType']
+        )
     )
-    )
 
-    hover = HoverTool(tooltips=[("Disease", "@desc"), ("Score", "$x"), ("Genes", "@genes"),("Category", "@cat")])
+    hover = HoverTool(tooltips=[("Disease", "@desc"), ("Category", "@cat"), 
+    ("Gene", "@desc2"), ("Type", "@assoc"), ("Strength", "@x{0.000}"), ("Frequency", 
+    "@y{0.000}")], names=['pts'])
 
 
-    p = figure(plot_width=900, plot_height=600, tools=['box_zoom','pan','reset', 'save',hover], title="")
-#     p.title_text_font = 'helvetica neue'
+
+    p = figure(plot_width=900, plot_height=600, tools=['box_zoom','pan','reset',
+    'save',hover], x_range=[0,0.8], y_range=[0,0.8])
     p.title_text_font = 'Source Sans Pro'
-    p.xaxis.axis_label = 'Strength of Association  ( Higher is Better )'
-    p.yaxis.axis_label = 'Gene Associations Per Disease  ( Lower is Better )'
+    p.xaxis.axis_label = 'Strength of Association'
+    p.yaxis.axis_label = 'Gene and Disease Frequency'
     p.xaxis.axis_label_text_font = 'Source Sans Pro'
     p.yaxis.axis_label_text_font = 'Source Sans Pro'
 
+    if selperc != '00':
+        xcir = np.linspace(-0.6,1,100)
+        ycir = 1-np.sqrt(np.square(cirrad)-np.square(xcir-1))
+        xcir = np.append(xcir, 1.0)
+        ycir = np.append(ycir, 1.0)
+        p.patch(xcir, ycir, line_color='#33ff33', fill_alpha=0.15, color='#ccffcc', 
+        line_width=1)
 
-    p.circle('x', 'y', size=20, fill_alpha=0.8, color=dfall['color'], source=source, line_width=1, line_color='#000000')
+    p.circle('x', 'y', size=20, fill_alpha=0.8, color=dfall['color'], source=source, 
+    line_width=1, line_color='#000000', name='pts')
+    
     p.responsive = True
 
 #     script, div = autoload_static(p, CDN, "")
     script, div = components(p)
 
     t = os.path.getmtime('app.py')
-    updated = '{modt:%B} {modt.day}, {modt:%Y}'.format( modt=datetime.date.fromtimestamp(t) )
+    updated='{modt:%B} {modt.day}, {modt:%Y}'.format(modt=datetime.date.fromtimestamp(t))
 
 #     updated = 'February 2, 2016'
 
@@ -94,8 +156,7 @@ def index():  #remember the function name does not need to match the URL
 #     else:
 
 
-    return render_template('index.html', script=script, div=div, 
-    dislist=dislist, updated=updated, jumpscript=jump, sel=sel)        
+    return render_template('index.html', script=script, div=div, catlist=catlist, atypelist=atypelist, selcat=selcat, selatype=selatype, perclist=perclist, selperc=selperc, updated=updated, jumpscript=jump, errmsg = errmsg)        
 
 
 if __name__ == "__main__":
