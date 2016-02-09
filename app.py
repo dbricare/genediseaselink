@@ -11,15 +11,7 @@ from bokeh.embed import components, autoload_static
 app = Flask(__name__)
 
 
-catclr = {'Brain and nervous system': '#9467bd', 'Eyes and vision': '#7f7f7f', 
-          'Digestive system': '#aec7e8', 'Blood/lymphatic system': '#17becf', 
-          'Mouth and teeth': '#98df8a', 'Cancers': '#ff9896', 
-          'Lungs and breathing': '#bcbd22', 
-          'Ear, nose, and throat': '#ffbb78', 'Kidneys and urinary system': '#1f77b4', 
-          'Food, nutrition, and metabolism': '#2ca02c', 
-          'Bones, muscles, and connective tissues': '#ff7f0e', 
-          'Reproductive system': '#e377c2', 'Not Available': '#eeeeee', 
-          'Skin, hair, and nails': '#d62728'}
+catclr = {'Digestive system': '#17becf', 'Brain and nervous system': '#d62728', 'Blood/lymphatic system': '#ffbb78', 'Reproductive system': '#e377c2', 'Not Available': '#eeeeee', 'Mouth and teeth': '#98df8a', 'Eyes and vision': '#7f7f7f', 'Kidneys and urinary system': '#1f77b4', 'Ear, nose, and throat': '#aec7e8', 'Bones, muscles, and connective tissues': '#ff7f0e', 'Lungs and breathing': '#bcbd22', 'Food, nutrition, and metabolism': '#2ca02c', 'Skin, hair, and nails': '#9467bd'}
 
 disease_dict = {'immune': 'Immune system', 'mouth': 'Mouth and teeth', 
                 'kidney': 'Kidneys and urinary system', 
