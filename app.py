@@ -127,7 +127,7 @@ def index():  #remember the function name does not need to match the URL
     p.circle('x', 'y', size=20, fill_alpha=0.8, color=dfall['color'], source=source, 
     line_width=1, line_color='#000000', name='pts')
     
-    url = "http://www.ncbi.nlm.nih.gov/pubmed/?term=@desc+@desc2/"
+    url = "http://www.ncbi.nlm.nih.gov/pubmed/?term=@desc+@desc2"
     taptool = p.select(type=TapTool)
     taptool.callback = OpenURL(url=url)
     
